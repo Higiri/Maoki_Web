@@ -1,3 +1,22 @@
+.works_blue {
+	padding: 0.4em 0.5em;
+	margin: 1em 0;
+	color: #494949;
+	background: transparent;/*  背景透明  */
+	border-left: solid 8px #7db4e6;   /* 左線 */
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+}
+
+.works_orange {
+	padding: 0.4em 0.5em;
+	margin: 1em 0;
+	color: #494949;
+	background: transparent;/*  背景透明  */
+	border-left: solid 8px #ffd59a;   /* 左線 */
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -34,4 +53,3 @@ body > .container {
 
 code {
   font-size: 80%;
-
