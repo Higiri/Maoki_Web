@@ -2,8 +2,8 @@
 	padding: 0.4em 0.5em;
 	margin: 1em 0;
 	color: #494949;
-	background: transparent;/*  背景透明  */
-	border-left: solid 8px #7db4e6;   /* 左線 */
+	background: transparent;
+	border-left: solid 8px #7db4e6;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
 }
 
@@ -11,42 +11,44 @@
 	padding: 0.4em 0.5em;
 	margin: 1em 0;
 	color: #494949;
-	background: transparent;/*  背景透明  */
-	border-left: solid 8px #ffd59a;   /* 左線 */
+	background: transparent;
+	border-left: solid 8px #ffd59a;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
 }
 
 .works {
-  position: relative;
-  padding: 0.25em 0;
-    border-left: solid 8px rgb(230, 90, 90);   /* 左線 */
+	position: relative;
+	padding: 0.25em 0;
+	border-left: solid 8px rgb(230, 90, 90);
 }
 .works:after {
-  content: "";
-  display: block;
-  height: 4px;
-  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
-  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90), transparent);
 }
 
 .works2 {
-  border-bottom: solid 3px skyblue;
-  border-left: solid 8px #ffd59a;   /* 左線 */
-  position: relative;
+	border-bottom: solid 3px skyblue;
+	border-left: solid 8px #ffd59a;
+	position: relative;
 }
 
 .works2:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 3px #ffc778;
-  border-left: solid 8px #ffd59a;   /* 左線 */
-  bottom: -3px;
-  width: 35%;
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #ffc778;
+	border-left: solid 8px #ffd59a;
+	bottom: -3px;
+	width: 35%;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+
+/*
+ * フッターの設定
+ * -------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -61,11 +63,6 @@ body {
   height: 60px; /* Set the fixed height of the footer here */
   background-color: #f5f5f5;
 }
-
-
-/* Custom page CSS
- * Not required for template or sticky footer method.
- * -------------------------------------------------- */
 
 body > .container {
   padding: 60px 15px 0;

@@ -7,6 +7,7 @@
 
 	<title>早川舞桜楓の非公式サイト</title>
 
+	<!-- CSS -->
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
 
@@ -16,6 +17,13 @@
 	<!-- BootstrapのJS -->
 	<script src="./js/bootstrap.min.js"></script>
 
+	<!-- SwiperのCSSの読み込み
+	*
+	*    >> Swiper <<
+	*    https://github.com/nolimits4web/swiper
+	*
+	-->
+	<link href="./css/swiper.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,10 +31,12 @@
 	<nav class="navbar navbar-expand-sm navbar-light bg-light">
 		<a class="navbar-brand" href="./">早川舞桜楓</a>
 
+		<!-- 幅がxs時に表示される、ハンバーガー ( ≡ ) ボタン  -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
+		<span class="navbar-toggler-icon"></span></button>
 
+		<!--  タイトル横のリンク  -->
+		<!--  現在のページはactiveにする  -->
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link" href="./">Home</a></li>
@@ -40,12 +50,60 @@
 
 
 	<div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">ようこそ</h1>
-      <p>早川舞桜楓の活動を紹介するサイトです。</p>
-      <p><a class="btn btn-primary btn-lg" href="./about.html" role="button">Learn more &gt;&gt;</a></p>
-    </div>
-  </div>
+		<div class="container">
+			<h1 class="display-3">ようこそ</h1>
+			<p>早川舞桜楓の活動を紹介するサイトです。</p>
+			<p><a class="btn btn-primary btn-lg" href="./about.html" role="button">Learn more &gt;&gt;</a></p>
+		</div>
+	</div>
+
+	<!--
+	*  Swiper  *
+	*
+	*  <div class="swiper-container">
+	*  スライド全体
+	*
+	*  <div class="swiper-wrapper">
+	*  ボックス部分
+	*  *
+	*  *  <div class="swiper-slide">
+	*  *  各コンテンツ
+	*  *
+	*  -->
+
+	<div class="container">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./image/thumbnail/sm36362566.png" height="400px" alt="サムネイル" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./image/thumbnail/2020-03-02.jpg" height="400px" alt="サムネイル" />
+				</div>
+
+				<div class="swiper-slide">
+					<img src="./image/thumbnail/sm36222397.png" height="400px" alt="サムネイル" />
+				</div>
+			</div>
+			<!--
+			<div class="swiper-pagination"></div>
+			-->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!--
+			<div class="swiper-scrollbar"></div>
+			-->
+
+		</div>
+	</div>
+
+
+
+
+
+<br />
+<hr />
+<br />
 
 	<div class="container">
 		<div class="row">
@@ -94,5 +152,18 @@
 		</div>
 	</footer>
 	<!--  フッター  -->
+
+
+	<script src="./js/swiper.min.js"></script>
+
+	<!-- Swiperの初期設定 -->
+	<script>
+	  var swiper = new Swiper('.swiper-container', {
+	    navigation: {
+	      nextEl: '.swiper-button-next',
+	      prevEl: '.swiper-button-prev',
+	    }
+	  });
+	</script>
 </body>
 </html>
