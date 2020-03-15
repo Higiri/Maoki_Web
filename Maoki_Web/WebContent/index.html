@@ -24,6 +24,11 @@
 	*
 	-->
 	<link href="./css/swiper.min.css" rel="stylesheet">
+	<!--
+	*
+	* Swiperの初期設定, JS読み込みはbody最下部
+	*
+	-->
 </head>
 <body>
 
@@ -71,39 +76,29 @@
 	*  *
 	*  -->
 
-	<div class="container">
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img src="./image/thumbnail/sm36362566.png" height="400px" alt="サムネイル" />
-				</div>
-				<div class="swiper-slide">
-					<img src="./image/thumbnail/2020-03-02.jpg" height="400px" alt="サムネイル" />
-				</div>
-
-				<div class="swiper-slide">
-					<img src="./image/thumbnail/sm36222397.png" height="400px" alt="サムネイル" />
-				</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/sm36362566.png" alt="サムネイル" />
 			</div>
-			<!--
-			<div class="swiper-pagination"></div>
-			-->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-			<!--
-			<div class="swiper-scrollbar"></div>
-			-->
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
+			</div>
 
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/sm36222397.png" alt="サムネイル" />
+			</div>
 		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!--
+		<div class="swiper-scrollbar"></div>
+		-->
+
 	</div>
 
 
-
-
-
-<br />
-<hr />
-<br />
 
 	<div class="container">
 		<div class="row">
@@ -153,18 +148,29 @@
 	</footer>
 	<!--  フッター  -->
 
-
 	<script src="./js/swiper.min.js"></script>
 
 	<!-- Swiperの初期設定 -->
 	<script>
-	  var swiper = new Swiper('.swiper-container', {
-	    navigation: {
-	      nextEl: '.swiper-button-next',
-	      prevEl: '.swiper-button-prev',
-	    },
-	    loop: true,
-	  });
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		slidesPerView: 3,
+		spaceBetween: 10,
+		centeredSlides : true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: true
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
 	</script>
 </body>
 </html>
