@@ -79,14 +79,22 @@
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<img src="./image/thumbnail/sm36362566.png" alt="サムネイル" />
+				<img src="./image/thumbnail/sm36362566.png" width="360px" alt="サムネイル" />
 			</div>
 			<div class="swiper-slide">
-				<img src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
+				<img src="./image/thumbnail/2020-03-02.jpg" width="360px" alt="サムネイル" />
 			</div>
-
 			<div class="swiper-slide">
-				<img src="./image/thumbnail/sm36222397.png" alt="サムネイル" />
+				<img src="./image/thumbnail/sm36222397.png" width="360px" alt="サムネイル" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/sm36440352.png" width="360px" alt="サムネイル" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/sm36292123.png" width="360px" alt="サムネイル" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./image/thumbnail/2020-03-10.jpg" width="360px" alt="サムネイル" />
 			</div>
 		</div>
 		<div class="swiper-pagination"></div>
@@ -154,7 +162,8 @@
 	<script>
 	var swiper = new Swiper('.swiper-container', {
 		loop: true,
-		slidesPerView: 3,
+		effect: 'coverflow',
+		slidesPerView: 5,
 		spaceBetween: 10,
 		centeredSlides : true,
 		navigation: {
@@ -162,7 +171,7 @@
 			prevEl: '.swiper-button-prev',
 		},
 		autoplay: {
-			delay: 3000,
+			delay: 300,
 			disableOnInteraction: true
 		},
 		pagination: {
