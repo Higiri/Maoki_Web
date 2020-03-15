@@ -18,6 +18,9 @@
   <!-- Bootstrap js -->
   <script src="./js/bootstrap.min.js"></script>
 
+  <!-- Filter -->
+  <script src="./js/filter.js"></script>
+
   <title>Works | 早川舞桜楓の非公式サイト</title>
 </head>
 <body>
@@ -44,7 +47,7 @@
   </nav>
   <!--  ナビゲーションバー  -->
 
-
+<!--
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-3">Works</h1>
@@ -52,9 +55,13 @@
       <p>YouTube、niconicoのアイコンに、リンクが貼ってあります。ぜひご覧ください。</p>
     </div>
   </div>
-
+ -->
 
   <div class="container">
+    <span class="trigger active btn btn-outline-dark" data-filter="all">すべて</span>
+    <span class="trigger btn btn-outline-dark" data-filter="movie">動画担当</span>
+    <span class="trigger btn btn-outline-dark" data-filter="encode">エンコード担当</span>
+    <span class="trigger btn btn-outline-dark" data-filter="original">オリジナル</span>
     <h2 class="works_blue">2020年</h2>
 
     <!--
@@ -87,7 +94,7 @@
     *  -->
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -99,19 +106,19 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter movie">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【オリジナルMV】アニソンメドレー　歌ってみた【紅蓮華/プ…</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayz mixing</h6>
+            <h6 class="card-subtitle text-muted">投稿者：Rayzing</h6>
             <p class="card-text"><button type="button" class="btn btn-outline-success">動画</button></p>
             <p class="card-text"><a href="https://www.youtube.com/watch?v=ca1L3X_dhn0"><img src="./image/icon_youtube.png" /></a></p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36440352.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -126,7 +133,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/29</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter movie">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -138,7 +145,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/14</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36292123.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -153,7 +160,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/29</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36222397.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -168,7 +175,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/13</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-01-12.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -187,7 +194,7 @@
     </div>
     <h2 class="works_orange">2019年</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36143442.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -203,7 +210,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/27</small></div>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-4 filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-12-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -219,23 +226,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/10</small></div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img class="card-img-top" src="./image/thumbnail/sm35930291.jpg" alt="サムネイル" />
-          <div class="card-body">
-            <h5 class="card-title">【再現MAD】アストラル使いが集う学院に通う、貧乳はどうすりゃいいですか？2</h5>
-            <h6 class="card-subtitle text-muted">投稿者：緋桐（Higiri）</h6>
-            <p class="card-text">
-              <button type="button" class="btn btn-outline-info">手伝い</button>
-            </p>
-            <p class="card-text">
-              <a href="https://www.youtube.com/watch?v=kz6wwlH80Vw"><img src="./image/icon_youtube.png" /></a>
-              <a href="https://www.nicovideo.jp/watch/sm35930291"><img src="./image/icon_niconico.png" /></a>
-            </p>
-          </div>
-          <div class="card-footer"><small class="text-muted">投稿日：2019/11/09</small></div>
-        </div>
-      </div>
+<!--
       <div class="col mb-4">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/xxxx.jpg" alt="サムネイル" />
@@ -254,6 +245,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/10</small></div>
         </div>
       </div>
+       -->
     </div>
   </div>   <!--  END : container  -->
 
