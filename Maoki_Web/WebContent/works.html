@@ -62,43 +62,25 @@
       <li class="breadcrumb-item"><a href="./">Home</a></li>
       <li class="breadcrumb-item active">Works</li>
     </ul>
-    <span class="trigger active btn btn-outline-dark" data-filter="all">すべて</span>
-    <span class="trigger btn btn-outline-dark" data-filter="movie">動画担当</span>
-    <span class="trigger btn btn-outline-dark" data-filter="encode">エンコード担当</span>
-    <span class="trigger btn btn-outline-dark" data-filter="original">オリジナル</span>
-    <h2 class="works_blue">2020年</h2>
-
+    <div class="mb-4">
+      <span class="trigger active btn btn-outline-dark" data-filter="all">すべて</span>
+      <span class="trigger btn btn-outline-dark" data-filter=".movie">動画担当</span>
+      <span class="trigger btn btn-outline-dark" data-filter=".encode">エンコード担当</span>
+      <span class="trigger btn btn-outline-dark" data-filter=".original">オリジナル</span>
+    </div>
     <!--
-    *  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-    *  通常1列表示。Medium(幅≥768px)：2列、Large(幅≥992px)：3列
+    *  row row-cols-1：通常1列表示
+    *  row-cols-md-2：Medium(幅≧768px)のとき2列
+    *  row-cols-lg-3：Large (幅≧992px)のとき3列
     *
-    *  <div class="col mb-4">
-    *  下に1.5remのmargin
+    *  mix-wrapper：絞り込みの対象
     *
-    *
-      <div class="col mb-4">
-        <div class="card">
-          <img class="card-img-top" src="./image/thumbnail/xxxx.jpg" alt="サムネイル" />
-          <div class="card-body">
-            <h5 class="card-title">動画タイトル</h5>
-            <h6 class="card-subtitle text-muted">投稿者：xxxx</h6>
-            <p class="card-text">
-              <button type="button" class="btn btn-outline-primary">エンコード</button>
-              <button type="button" class="btn btn-outline-success">動画</button>
-            </p>
-            <p class="card-text">
-              <a href="https://www.youtube.com/xxxxx"><img src="./image/icon_youtube.png" /></a>
-              <a href="https://www.nicovideo.jp/watch/smxxxxxxxx"><img src="./image/icon_niconico.png" /></a>
-            </p>
-          </div>
-          <div class="card-footer"><small class="text-muted">投稿日：yyyy/mm/dd</small></div>
-        </div>
-      </div>
+    *  mb-4：下に1.5remのmargin
     *
     *  -->
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4 filter encode">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mix-wrapper">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -110,7 +92,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter movie">
+      <div class="col mb-4 mix filter movie">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -122,7 +104,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36440352.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -137,7 +119,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/29</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter movie">
+      <div class="col mb-4 mix filter movie">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -149,7 +131,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/14</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36292123.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -164,7 +146,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/29</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36222397.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -179,7 +161,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/13</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-01-12.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -195,10 +177,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/12</small></div>
         </div>
       </div>
-    </div>
-    <h2 class="works_orange">2019年</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36143442.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -214,7 +193,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/27</small></div>
         </div>
       </div>
-      <div class="col mb-4 filter encode">
+      <div class="col mb-4 mix filter encode">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-12-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -262,5 +241,6 @@
     </div>
   </footer>
   <!--  フッター  -->
+  <script src="./js/mixitup.min.js"></script>
 </body>
 </html>
