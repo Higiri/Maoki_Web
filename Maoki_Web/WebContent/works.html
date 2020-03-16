@@ -18,6 +18,8 @@
   <!-- Bootstrap js -->
   <script src="./js/bootstrap.min.js"></script>
 
+  <link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
   <!-- Filter -->
   <script src="./js/filter.js"></script>
 
@@ -37,9 +39,9 @@
       <!--  現在のページはactiveにする  -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="./">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./works.html">Works</a></li>
           <li class="nav-item"><a class="nav-link" href="./">Contact</a></li>
         </ul>
       </div>
@@ -63,21 +65,21 @@
       <li class="breadcrumb-item active">Works</li>
     </ul>
     <div class="mb-4">
-      <span class="trigger active btn btn-outline-dark" data-filter="all">すべて</span>
-      <span class="trigger btn btn-outline-dark" data-filter=".movie">動画担当</span>
-      <span class="trigger btn btn-outline-dark" data-filter=".encode">エンコード担当</span>
-      <span class="trigger btn btn-outline-dark" data-filter=".original">オリジナル</span>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="trigger active btn btn-outline-dark" data-filter="all">すべて</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter=".movie">動画担当</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter=".encode">エンコード担当</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter=".original">オリジナル</button>
+      </div>
     </div>
     <!--
     *  row row-cols-1：通常1列表示
     *  row-cols-md-2：Medium(幅≧768px)のとき2列
     *  row-cols-lg-3：Large (幅≧992px)のとき3列
     *
-    *  mix-wrapper：絞り込みの対象
-    *
-    *  mb-4：下に1.5remのmargin
-    *
-    *  -->
+    *  mix-wrapper：絞り込みの内容の範囲
+    *  mix filter [xxxxx]：絞り込みのフィルター
+    -->
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mix-wrapper">
       <div class="col mb-4 mix filter encode">
@@ -86,7 +88,7 @@
           <div class="card-body">
             <h5 class="card-title">シーサイドモーテル歌いたくて、歌わせていただきました</h5>
             <h6 class="card-subtitle text-muted">投稿者：ヤミハ。</h6>
-            <p class="card-text"><button type="button" class="btn btn-outline-primary">エンコード</button></p>
+            <p class="card-text"><span class="oi oi-tag"></span>エンコード</p>
             <p class="card-text"><a href="https://www.youtube.com/watch?v=p_QTbVuvcXY"><img src="./image/icon_youtube.png" /></a></p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
