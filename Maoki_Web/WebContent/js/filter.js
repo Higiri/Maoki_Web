@@ -1,5 +1,5 @@
 $(function() {
-  var containerEl = document.querySelector('.mix-wrapper');
+  var containerEl = document.querySelector('.mix-filter');
   var mixer = mixitup(containerEl);
 });
 
