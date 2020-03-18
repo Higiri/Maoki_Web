@@ -18,6 +18,9 @@
   <!-- Bootstrap js -->
   <script src="./js/bootstrap.min.js"></script>
 
+  <!-- Bootstrap Icon (Iconicのアイコン)-->
+  <link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
   <!-- Swiper CS  -->
   <link href="./css/swiper.min.css" rel="stylesheet">
   <!-- Swiperの初期設定, JS読み込みはbody最下部  -->
@@ -25,110 +28,143 @@
   <title>早川舞桜楓の非公式サイト</title>
 </head>
 <body>
-
   <!--  ナビゲーションバー  -->
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="./">早川舞桜楓</a>
-
       <!-- 幅がxs時に表示される、[≡] ボタン  -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span></button>
-
       <!--  現在のページはactiveにする  -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"><a class="nav-link" href="./">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
           <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213">Twitter</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!--  ナビゲーションバー  -->
-
-  <div class="jumbotron">
-    <div class="container">
-        <h1 class="display-3">ようこそ</h1>
-        <p>早川舞桜楓の活動を紹介するサイトです。</p>
-        <p><a class="btn btn-primary btn-lg" href="./works.html" role="button">Works &gt;&gt;</a></p>
+  <!-- Swiper -->
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/sm35163668.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/sm29464844.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="./image/thumbnail/sm28782424.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
-
-  <!-- Swiper
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/sm36362566.png" width="360px" alt="サムネイル" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/2020-03-02.jpg" width="360px" alt="サムネイル" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/sm36222397.png" width="360px" alt="サムネイル" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/sm36440352.png" width="360px" alt="サムネイル" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/sm36292123.png" width="360px" alt="サムネイル" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./image/thumbnail/2020-03-10.jpg" width="360px" alt="サムネイル" />
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!
-    <div class="swiper-scrollbar"></div>
-    ->
-
-  </div>
-  -->
-
-
+  <!-- Swiper -->
+  <!-- 以下内容 -->
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">最新のエンコード担当</h4>
+      <!-- Large以上なら8グリッド(画面の2/3) -->
+      <div class="col-lg-8">
+        <div class="row">
+        <!--  必要ならば追加  -->
+          <div class="col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">このサイトでは、動画制作を行っている、<strong>早川舞桜楓</strong>の活動を紹介しています。</p>
+                <p class="card-text">制作した作品は<a href="./works.html">Works</a>を、依頼については<a href="./contact.html">Contact</a>をご覧ください。</p>
+              </div>
+            </div>
           </div>
-          <div class = "text-center">
-            <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm36440352" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="https://www.nicovideo.jp/watch/sm36440352">【陰キャ学生が】猫猫的宇宙論　歌ってみた【るか】</a></iframe>
+          <!-- 6グリット(半分) -->
+          <div class="col-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <p class="my-0 font-weight-normal">最新の動画作成担当</p>
+              </div>
+              <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
+              <div class="card-body">
+                <h5 class="card-title">【オリジナルMV】アニソンメドレー　歌ってみた【紅蓮華/プライド革命/ピースサイン/redo/シルエット】</h5>
+                <h6 class="card-subtitle text-muted">投稿者：Rayzing</h6>
+                <p class="card-text"><a href="https://www.youtube.com/watch?v=ca1L3X_dhn0"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+              </div>
+              <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">【陰キャ学生が】猫猫的宇宙論　歌ってみた【るか】</h5>
-            <h6 class="card-subtitle text-muted">るか さん</h6>
-            <p class="card-text">エンコード担当</p>
+          <div class="col-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <p class="my-0 font-weight-normal">最新のエンコード担当</p>
+              </div>
+              <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
+              <div class="card-body">
+                <h5 class="card-title">シーサイドモーテル歌いたくて、歌わせていただきました</h5>
+                <h6 class="card-subtitle text-muted">投稿者：ヤミハ。</h6>
+                <p class="card-text"><a href="https://www.youtube.com/watch?v=p_QTbVuvcXY"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+              </div>
+              <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
+            </div>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <p class="my-0 font-weight-normal">個人制作作品</p>
+              </div>
+              <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" alt="サムネイル" />
+                <div class="card-body">
+                  <h5 class="card-title">【童謡】「チューリップ」ロックにしてみた的なやつ【アレンジ】</h5>
+                  <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+                  <p class="card-text">
+                    <a href="https://www.youtube.com/watch?v=XMIqARcpfmc"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35870123"><img src="./image/icon_niconico.png" class="mx-2" /></a>
+                  </p>
+                </div>
+              <div class="card-footer"><small class="text-muted">投稿日：2019/10/27</small></div>
+            </div>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <p class="my-0 font-weight-normal">個人制作作品</p>
+              </div>
+              <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="サムネイル" />
+              <div class="card-body">
+                <h5 class="card-title">【AviUtlで】おどりゃんせ【作ってみた】</h5>
+                <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+                <div class="card-text">
+                  <a href="https://www.youtube.com/watch?v=sVoCTlPxbTg"><img src="./image/icon_youtube.png" class="mx-2" /></a>
+                </div>
+              </div>
+              <div class="card-footer"><small class="text-muted">投稿日：2019/03/12</small></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <!-- 通常11グリッド、small以上なら8グリッド、Large以上なら4グリッド -->
+      <div class="col-11 col-sm-8 col-lg-4 mb-4">
         <div class="card">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">最新の動画作成担当</h4>
-          </div>
-          <div class = "text-center">
-            <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm36362566" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="https://www.nicovideo.jp/watch/sm36362566">ギミック、歌ってみた【みーてぃー】</a></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">ギミック、歌ってみた【みーてぃー】</h5>
-            <h6 class="card-subtitle text-muted">【ᛗ】みー太郎</h6>
-            <p class="card-text">動画作成担当</p>
+          <div class="text-center">
+            <!-- Twitterの埋め込み -->
+            <a class="twitter-timeline" data-lang="ja" data-height="1200" href="https://twitter.com/maoki0213?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-  <div class = "text-center">
-    <a class="twitter-timeline" data-lang="ja" data-width="440" data-height="720" href="https://twitter.com/maoki0213?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-
   <!--  フッター  -->
   <footer class="footer">
     <div class="container">
@@ -136,15 +172,13 @@
     </div>
   </footer>
   <!--  フッター  -->
-
   <script src="./js/swiper.min.js"></script>
-
-  <!-- Swiperの初期設定 -->
+  <!-- Swiperの設定 -->
   <script>
   var swiper = new Swiper('.swiper-container', {
     loop: true,
-    effect: 'coverflow',
-    slidesPerView: 5,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     spaceBetween: 10,
     centeredSlides : true,
     navigation: {
@@ -152,13 +186,23 @@
       prevEl: '.swiper-button-prev',
     },
     autoplay: {
-      delay: 300,
-      disableOnInteraction: true
+      delay: 3000,
+      disableOnInteraction: false
     },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+        992: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
     },
   });
   </script>
