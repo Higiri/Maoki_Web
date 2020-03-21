@@ -68,20 +68,33 @@
       <li class="breadcrumb-item"><a href="./">Home</a></li>
       <li class="breadcrumb-item active">Works</li>
     </ul>
-    <!-- 絞り込みの属性 -->
+    <!-- 絞り込み -->
     <div class="mb-3">
       <button type="button" class="trigger active btn btn-outline-dark" data-filter="all">すべて</button
-      ><div class="btn-group" role="group" aria-label="絞り込み">
-        <button type="button" class="trigger btn btn-outline-dark" data-filter=".movie">動画担当</button>
-        <button type="button" class="trigger btn btn-outline-dark" data-filter=".encode">エンコード担当</button>
-        <button type="button" class="trigger btn btn-outline-dark" data-filter=".personal">個人制作</button>
+      ><div class="btn-group" role="group">
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="1">動画担当</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="2">エンコード担当</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="3">個人制作</button>
       </div>
     </div>
-    <!-- ソート -->
-    <div class="mb-3">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" data-sort="day:desc" class="sort active btn btn-outline-dark">投稿日降順</button>
-        <button type="button" data-sort="day:asc" class="sort btn btn-outline-dark">投稿日昇順</button>
+    <!-- ソートと検索 -->
+    <div class="form-row align-items-center mb-3">
+      <div class="col-auto my-1">
+      <select data-sortOrder  class="custom-select">
+        <option value="index">投稿日</option>
+      </select>
+      </div>
+      <div class="btn-group col-auto my-1" role="group">
+        <button type="button"  class="sort active btn btn-outline-dark" data-sortAsc>降順</button>
+        <button type="button"  class="sort btn btn-outline-dark" data-sortDesc>昇順</button>
+      </div>
+      <div class="col-auto my-1">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">検索</div>
+        </div>
+        <input type="text" name="filtr-search" class="form-control" value="" placeholder="早川舞桜楓、2019、など" data-search="">
+      </div>
       </div>
     </div>
     <!--
@@ -89,12 +102,14 @@
     *  row-cols-md-2：Medium(幅≧768px)のとき2列
     *  row-cols-lg-3：Large (幅≧992px)のとき3列
     *
-    *  mix-filter：絞り込みの内容の範囲
-    *  mix       ：絞り込みの内容
-    *  filter [x]：絞り込みの属性
+    *  filter       ：絞り込みの内容の範囲
+    *  filtr-item   ：絞り込みの内容
+    *
+    *  data-category：絞り込みの属性
+    *  data-sort    ：ソート用
     -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mix-filter">
-      <div class="col mb-4 mix filter encode" data-day="200310">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="200310">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -106,7 +121,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie"  data-day="200302">
+      <div class="col pb-4 filtr-item" data-category="1"  data-sort="200302">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -118,7 +133,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="200229">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="200229">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36440352.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -132,7 +147,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/29</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="200214">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="200214">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -144,7 +159,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/14</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="200129">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="200129">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36292123.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -158,7 +173,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/29</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="200113">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="200113">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36222397.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -172,7 +187,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/13</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="200112">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="200112">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-01-12.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -186,7 +201,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/12</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="191227">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="191227">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36143442.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -200,7 +215,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/27</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="191210">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="191210">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-12-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -214,7 +229,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/10</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter personal" data-day="191027">
+      <div class="col pb-4 filtr-item" data-category="3" data-sort="191027">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -228,7 +243,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/10/27</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="191020">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="191020">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-10-20.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -242,7 +257,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/10/20</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190902">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190902">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-09-02.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -256,7 +271,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/09/02</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="190901">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="190901">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-09-01.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -270,7 +285,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/09/01</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="190825">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="190825">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-08-25.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -284,7 +299,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/08/25</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190823">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190823">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35581289.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -298,7 +313,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/08/23</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190626">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190626">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35302282.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -312,7 +327,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/06/26</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190531">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190531">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35201019.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -326,7 +341,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/05/31</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="190523">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="190523">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35163668.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -340,7 +355,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/05/23</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190414">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190414">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm34967788.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -354,7 +369,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/04/14</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190408">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190408">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm34933363.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -368,7 +383,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/04/08</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter personal" data-day="190312">
+      <div class="col pb-4 filtr-item" data-category="3" data-sort="190312">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -392,7 +407,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/03/12</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="190219">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="190219">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-02-19.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -406,7 +421,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/02/19</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="181115">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="181115">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-11-15.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -420,7 +435,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/11/15</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180909">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180909">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-09-09.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -434,7 +449,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/09/09</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180902">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180902">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33792744.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -448,7 +463,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/09/02</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180820">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180820">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33722128.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -462,7 +477,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/20</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180824">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180824">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-08-24.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -476,7 +491,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/24</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="180809">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="180809">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33663937.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -490,7 +505,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/09</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="180706">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="180706">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-07-06.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -504,7 +519,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/07/06</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180414">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180414">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33050766.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -518,7 +533,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/04/14</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="180408">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="180408">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33018064.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -532,7 +547,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/04/08</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="180309">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="180309">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32858218.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -546,7 +561,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/03/09</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="180101">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="180101">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-01-01.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -560,7 +575,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/01/01</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="171105">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="171105">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32219731.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -574,7 +589,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/11/05</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="171031">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="171031">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32192888.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -588,7 +603,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/31</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="171028">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="171028">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32173565.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -602,7 +617,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/28</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="171024">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="171024">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32151447.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -616,7 +631,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/24</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="171022">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="171022">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32139823.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -630,7 +645,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/22</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="171007">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="171007">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32057907.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -644,7 +659,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/07</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="170923">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="170923">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31979665.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -658,7 +673,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/09/23</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="170811">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="170811">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31726610.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -672,7 +687,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/08/11</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="170723">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="170723">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31620571.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -686,7 +701,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/07/23</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="170619">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="170619">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31425137.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -700,7 +715,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/06/19</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="170211">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="170211">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm30613836.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -714,7 +729,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/02/11</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter encode" data-day="161224">
+      <div class="col pb-4 filtr-item" data-category="2" data-sort="161224">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2016-12-24.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -728,7 +743,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/12/24</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="160817">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="160817">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm29464844.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -742,7 +757,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/08/17</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="160803">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="160803">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm29373232.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -756,7 +771,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/08/03</small></div>
         </div>
       </div>
-      <div class="col mb-4 mix filter movie" data-day="160505">
+      <div class="col pb-4 filtr-item" data-category="1" data-sort="160505">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm28782424.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -780,6 +795,7 @@
   </footer>
   <!-- ページのトップへ戻るボタン -->
   <p id="page-top"><a href="#">PAGE TOP</a></p>
-  <script src="./js/mixitup.min.js"></script>
+
+  <script src="./js/jquery.filterizr.min.js"></script>
 </body>
 </html>

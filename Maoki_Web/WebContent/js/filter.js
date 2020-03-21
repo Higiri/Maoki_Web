@@ -1,6 +1,11 @@
-$(function() {
-  var containerEl = document.querySelector('.mix-filter');
-  var mixer = mixitup(containerEl);
+/*
+ *
+ */
+$(function () {
+    $('.filter').filterizr();
+    var filterSingle = $('.filter').filterizr({
+        layout: 'sameWidth'
+    });
 });
 
 $(document).on('click', '.trigger', function () {
