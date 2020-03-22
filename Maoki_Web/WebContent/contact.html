@@ -20,10 +20,9 @@
   <!-- トップへ戻るJS -->
   <script src="./js/top.js"></script>
 
-  <title>早川舞桜楓の非公式サイト</title>
+  <title>Contact | 早川舞桜楓の非公式サイト</title>
 </head>
 <body>
-
   <!--  ナビゲーションバー  -->
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container">
@@ -38,7 +37,8 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
-          <li class="nav-item active"><a class="nav-link" href="./">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
+          <li class="nav-item active"><a class="nav-link">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213">Twitter</a></li>
         </ul>
       </div>
@@ -51,19 +51,13 @@
       <li class="breadcrumb-item"><a href="./">Home</a></li>
       <li class="breadcrumb-item active">Contact</li>
     </ul>
-    <div class="alert alert-info" role="alert">
-      <h4 class="alert-heading mt-2">注意</h4>
-      <p>このサイトは緋桐が学習目的で作成したものです。</p>
-      <p>このサイトに関するお問い合わせは、緋桐（Twitter<a href="https://twitter.com/higiri_4869">@higiri_4869</a>）へのDMか、<br />
-         higiri4869 [at] gmail.com へメールをお願いします。</p>
-    </div>
     <div class="row row-cols-1">
-      <div class="col mb-4">
-        <div class="card">
+      <div class="col">
+        <div class="card mb-4">
           <div class="card-header">依頼について</div>
           <div class="card-body">
-            <p class="card-text">制作した動画の一覧は、<a href="./works.html">Works</a>で公開しています。</p>
-            <p class="card-text">動画の作成やエンコードについての依頼は、TwitterのDMへお願いします。</p>
+            <p class="card-text">依頼については、まず<a href="./request.html">Request</a>をご確認ください。</p>
+            <p class="card-text">動画制作やエンコードについての依頼は、TwitterのDMか、下のメールフォームをご利用ください。</p>
             <div class="media">
               <a href="https://twitter.com/maoki0213"><img class="mx-3 rounded-circle" src="https://pbs.twimg.com/profile_images/1227971877940760581/cUek00UB.jpg" width="128px" height="128px" /></a>
               <div class="media-body">
@@ -74,8 +68,57 @@
             </div>
           </div>
         </div>
+        <div class="card mb-4">
+          <div class="card-header">メールフォーム</div>
+          <div class="card-body">
+           <form method="post" action="./mail.php" class="was-validated">
+              <div class="form-group row">
+                <label for="input-name" class="col-sm-4 col-lg-3 col-form-label">お名前</label>
+                <div class="col-sm-8 col-lg-9">
+                  <input name="Name" type="text" class="form-control" id="input-name" placeholder="お名前" required="required">
+                  <div class="valid-feedback">OK</div>
+                  <div class="invalid-feedback">お名前を入力してください。</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="input-mail" class="col-sm-4 col-lg-3 col-form-label">メールアドレス</label>
+                <div class="col-sm-8 col-lg-9">
+                  <input name="Email" type="email" class="form-control" id="input-mail" placeholder="xxxx@xxxxx.xxx" required="required">
+                  <div class="valid-feedback">OK</div>
+                  <div class="invalid-feedback">無効なメールアドレスです。</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-3 col-form-label">件名（選択）</label>
+                <div class="col-sm-8 col-lg-9">
+                  <select name="ご用件" class="form-control" required>
+                    <option value="">件名を選択</option>
+                    <option value="依頼">依頼</option>
+                    <option value="その他お問い合わせ">その他お問い合わせ</option>
+                   </select>
+                   <div class="valid-feedback">OK</div>
+                   <div class="invalid-feedback">どちらかを選択してください。</div>
+               </div>
+             </div>
+             <div class="form-group row">
+                <label class="col-sm-4 col-lg-3 col-form-label">お問い合わせ内容</label>
+                <div class="col-sm-8 col-lg-9">
+                  <textarea name="お問い合わせ内容" class="form-control" rows="5" required="required"></textarea>
+                  <div class="valid-feedback">OK</div>
+                  <div class="invalid-feedback">お問い合わせ内容を入力してください。</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">メールを送信</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
   <!--  フッター  -->
   <footer class="footer">
