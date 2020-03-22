@@ -1,3 +1,71 @@
+.card-columns {
+  @include media-breakpoint-only {
+    column-count: 2;
+  }
+}
+
+
+
+.section {
+  margin: 3.5rem 0 0 0;
+  padding: 2rem 0 1rem 0;
+}
+
+.section.section-default {
+  background-color: #eee;
+}
+
+.section.section-inverse {
+  background-color: #fff5e6;
+}
+
+.section .subtitle {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section .subtitle h2 {
+  margin-top: 0;
+}
+
+.point .point-box {
+  text-align: center;
+}
+
+.point .point-box .point-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 60px;
+  line-height: 100px;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.point .point-box .point-circle.works_icon {
+  background-color: #28a745;
+}
+
+.point .point-box .point-circle.request {
+  background-color: #3498DB;
+}
+
+.point .point-box .point-circle.contact {
+  background-color: #E74C3C; /*#dc3545*/
+}
+
+.point .point-box .point-description h4 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.point .point-box .point-description p {
+  text-align: justify;
+}
+
+
+
+
 /*
  * Topへ戻るボタン
  * -------------------------------------------------- */
