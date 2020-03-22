@@ -1,3 +1,11 @@
+.card-columns {
+  @include media-breakpoint-only {
+    column-count: 2;
+  }
+}
+
+
+
 .section {
   margin: 3.5rem 0 0 0;
   padding: 2rem 0 1rem 0;
