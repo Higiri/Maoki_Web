@@ -54,7 +54,7 @@
   <!--  ナビゲーションバー  -->
   <!-- Swiper -->
   <div class="container">
-    <div class="swiper-container">
+    <div class="swiper-container mt-2">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" />
@@ -134,7 +134,7 @@
               <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
               <div class="card-body">
                 <h5 class="card-title">【オリジナルMV】アニソンメドレー　歌ってみた【紅蓮華/プライド革命/ピースサイン/redo/シルエット】</h5>
-                <h6 class="card-subtitle text-muted">投稿者：Rayzing</h6>
+                <h6 class="card-subtitle text-muted my-2">投稿者：Rayzing</h6>
                 <p class="card-text"><a href="https://www.youtube.com/watch?v=ca1L3X_dhn0"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
               </div>
               <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
@@ -148,7 +148,7 @@
               <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
               <div class="card-body">
                 <h5 class="card-title">シーサイドモーテル歌いたくて、歌わせていただきました</h5>
-                <h6 class="card-subtitle text-muted">投稿者：ヤミハ。</h6>
+                <h6 class="card-subtitle text-muted my-2">投稿者：ヤミハ。</h6>
                 <p class="card-text"><a href="https://www.youtube.com/watch?v=p_QTbVuvcXY"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
               </div>
               <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
@@ -162,7 +162,7 @@
               <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" alt="サムネイル" />
                 <div class="card-body">
                   <h5 class="card-title">【童謡】「チューリップ」ロックにしてみた的なやつ【アレンジ】</h5>
-                  <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+                  <h6 class="card-subtitle text-muted my-2">投稿者：早川舞桜楓</h6>
                   <p class="card-text">
                     <a href="https://www.youtube.com/watch?v=XMIqARcpfmc"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35870123"><img src="./image/icon_niconico.png" class="mx-2" /></a>
                   </p>
@@ -178,7 +178,7 @@
               <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="サムネイル" />
               <div class="card-body">
                 <h5 class="card-title">【AviUtlで】おどりゃんせ【作ってみた】</h5>
-                <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+                <h6 class="card-subtitle text-muted my-2">投稿者：早川舞桜楓</h6>
                 <div class="card-text">
                   <a href="https://www.youtube.com/watch?v=sVoCTlPxbTg"><img src="./image/icon_youtube.png" class="mx-2" /></a>
                 </div>
@@ -193,20 +193,36 @@
         <div class="card">
           <div class="text-center">
             <!-- Twitterの埋め込み -->
-            <a class="twitter-timeline" data-lang="ja" data-height="1080" href="https://twitter.com/maoki0213?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-lang="ja" data-height="1000" href="https://twitter.com/maoki0213?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--  フッター  -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">&copy; 2020 <a href="https://twitter.com/higiri_4869">緋桐</a> and <a href="https://twitter.com/maoki0213">早川舞桜楓</a> All rights reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓 rights reserved.</div>
+          <div class="col-md-6 footer-social">
+            <a href="#"><i class="icon-niconico"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- ページのトップへ戻るボタン -->
-  <p id="page-top"><a href="#">PAGE TOP</a></p>
+
+  <!-- ページのトップへ戻るボタン
+  <div id="pagetop"><a href="#"></a></div>
+  -->
+  <!-- トップへ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
+
+  <!-- SwiperのJS -->
   <script src="./js/swiper.min.js"></script>
   <!-- Swiperの設定 -->
   <script>
