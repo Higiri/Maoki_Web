@@ -14,9 +14,12 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
   <!-- Bootstrap js -->
   <script src="./js/bootstrap.min.js"></script>
+  <!-- Bootstrap Icon (Iconicのアイコン)-->
+  <link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <!-- Font Awesomeのアイコン -->
+  <script src="https://kit.fontawesome.com/9938a3005f.js" crossorigin="anonymous"></script>
   <!-- トップへ戻るJS -->
   <script src="./js/top.js"></script>
 
@@ -52,98 +55,132 @@
       <li class="breadcrumb-item"><a href="./">Home</a></li>
       <li class="breadcrumb-item active">Request</li>
     </ul>
-    <ul class="list-group mb-4">
-      <li class="list-group-item">料金</li>
-      <li class="list-group-item">お支払い方法</li>
-      <li class="list-group-item">依頼の流れ</li>
-      <li class="list-group-item">ご依頼にあたっての注意事項</li>
-    </ul>
-    <div class="row">
-      <div class="col col-12 col-lg-6">
-        <div class="card  mb-4">
-          <div class="card-header">料金</div>
-          <div class="card-body">
-            <p class="card-text">動画制作の<strong>基本料金</strong>の目安は、次の通りです。</p>
-            <table class="table table-bordered">
-              <thead class="thead-light">
-                <tr><th>内容</th><th>料金</th></tr>
-              </thead>
-              <tr><td>エンコードのみ</td><td>無償</td></tr>
-              <tr><td>歌詞入れのみ</td><td rowspan="3" class="align-middle">3000円～</td></tr>
-              <tr><td>ワンコーラス</td></tr>
-              <tr><td>Twitter動画</td></tr>
-              <tr><td>フルMV</td><td rowspan="2" class="align-middle">5000円～</td></tr>
-              <tr><td>オリジナル</td></tr>
-            </table>
-            <p class="card-text">次の内容の場合は、追加料金が必要です。</p>
-            <table class="table table-hover table-bordered">
-              <thead class="thead-light">
-                <tr><th>内容</th><th>追加料金</th></tr>
-              </thead>
-              <tr><td>コラボ・合唱動画</td><td>500円×人数</td></tr>
-              <tr><td>一週間以内のスピード納品</td><td>5000円</td></tr>
-              <tr><td>商業利用・収益目的</td><td>要相談</td></tr>
-            </table>
-            <h5 class="card-title">注意</h5>
-            <p class="card-text">この料金は、あくまで目安です。適宜ご相談ください。</p>
-            <p class="card-text">スピード納品の場合、あまり高度な動画は制作できません。ご了承ください。</p>
-          </div>
-        </div>
-        <div class="card mb-4">
-          <div class="card-header">お支払い方法</div>
-            <div class="card-body">
-              <p class="card-text">料金のお支払い方法は、<strong>Amazonギフト券</strong>です。</p>
-              <p class="card-text">お支払い後の返金はいかなる理由でも致しかねます。</p>
+    <div class="card">
+      <div class="card-header">依頼について</div>
+      <div class="card-body">
+        <ul class="stepflow">
+          <li>
+            <div class="stepflow-black"></div>
+            <div class="stepflow_label">依頼</div>
+            <div class="stepflow_title">依頼の方法</div>
+            <div class="stepflow_content">
+              <p class="card-text"><a href="https://twitter.com/maoki0213">Twitter</a>のDM(ダイレクトメッセージ)、または<a href="./contact.html">メール</a>で依頼内容を送信してください。</p>
             </div>
-        </div>
-      </div>
-      <div class="col col-12 col-lg-6">
-        <div class="card mb-4">
-          <div class="card-header">依頼の流れ</div>
-          <div class="card-body">
-            <p class="card-text">動画制作の大まかな流れは、次の通りです。</p>
-          </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">TwitterへのDM、または<a  href="./contact.html">メール</a>に依頼内容の送付</li>
-              <li class="list-group-item">納期・料金の確認</li>
-              <li class="list-group-item">制作（通常一ヶ月～）</li>
-              <li class="list-group-item">納品・お支払い</li>
-            </ul>
-        </div>
-        <div class="card mb-4">
-          <div class="card-header">ご依頼にあたっての注意事項</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">ご依頼はTwitter、メールでのみ受け付けます。<br /><small class="text-muted">(進捗などの連絡をDiscord等で行うことは可能です)</small></li>
-            <li class="list-group-item">動画のリテイクは何度でも無償です。<br /><small class="text-muted">(納期直前のリテイクは、納期に間に合わなくなる場合があります。)</small></li>
-            <li class="list-group-item">納品前であれば、キャンセルも可能です。</li>
-            <li class="list-group-item">特に指定がない場合、納品する動画は次の形式となります。</li>
-          </ul>
-          <div class="card-body">
-            <table class="table table-hover table-bordered">
-              <tr><td>形式</td><td>MPEG-4 H.264（.mp4）</td></tr>
-              <tr><td>総ビットレート</td><td>15000kbps</td></tr>
-              <tr><td>音声</td><td>480kbps</td></tr>
-            </table>
-          </div>
-        </div>
-        <div class="card mb-4">
-          <div class="card-header">制作に必要なファイルについて</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">音源・立ち絵素材などは、zip形式にまとめ、アップローダー等を経由してお渡しください。</li>
-            <li class="list-group-item">歌詞などがある場合は、そちらも同梱してださい</li>
-            <li class="list-group-item">仮の絵しかない場合でも、先行して制作が可能な場合があります。ご相談ください。</li>
-          </ul>
-        </div>
+          </li>
+          <li>
+            <div class="stepflow-white"></div>
+            <div class="stepflow_label">料金</div>
+            <div class="stepflow_title">料金について</div>
+            <div class="stepflow_content">
+              <div class="row">
+                <div class="col col-12 col-md-5">
+                  <p class="card-text"><strong>基本料金</strong>の目安は次の通りです。</p>
+                  <table class="table table-bordered">
+                    <thead class="thead-light">
+                      <tr><th>内容</th><th>基本料金</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>エンコードのみ</td><td>無償</td></tr>
+                      <tr><td>歌詞入れのみ</td><td rowspan="3" class="align-middle">3000円～</td></tr>
+                      <tr><td>ワンコーラス</td></tr>
+                      <tr><td>Twitter動画</td></tr>
+                      <tr><td>フルMV</td><td rowspan="2" class="align-middle">5000円～</td></tr>
+                      <tr><td>オリジナル</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col col-12 col-md-7">
+                  <p class="card-text">次の内容の場合、基本料金に加えて<strong>追加料金</strong>が必要となります。</p>
+                  <table class="table table-hover table-bordered">
+                    <thead class="thead-light">
+                      <tr><th>内容</th><th>追加料金</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>コラボ・合唱動画</td><td>500円×人数</td></tr>
+                      <tr><td>一週間以内のスピード納品</td><td>5000円</td></tr>
+                      <tr><td>商業利用・収益目的</td><td>要相談</td></tr>
+                    </tbody>
+                  </table>
+                  <h6 class="card-title">注意</h6>
+                  <p class="card-text">この料金は<strong>目安</strong>です。</p>
+                  <p class="card-text">スピード納品の場合、あまり高度な動画は制作できません。</p>
+                  <p class="card-text">表にない内容でも制作可能な場合がありますので、お気軽にご連絡ください。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="stepflow-white"></div>
+            <div class="row">
+              <div class="col col-12 col-md-6">
+                <div class="stepflow_label">制作</div>
+                <div class="stepflow_title">制作について</div>
+                <div class="stepflow_content">
+                  <p class="card-text">制作には通常、<strong>一ヶ月以上</strong>の期間を必要とします。</p>
+                </div>
+                <div class="stepflow_title pt-4">必要な素材</div>
+                <div class="stepflow_content">
+                  <p class="card-text">音源や立ち絵イラスト、歌詞などの素材は、zip形式にまとめ、アップローダー等を経由してお渡しください。</p>
+                  <p class="card-text">仮の絵しかなくても、先行して制作を始められる場合があります。ご相談ください。</p>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6">
+                <div class="stepflow_title pt-4">リテイク（修正等）</div>
+                <div class="stepflow_content">
+                  <p class="card-text">動画のリテイクは基本的に無償で行っています。<br /><small class="text-muted">(納期直前のリテイクは、納期に間に合わなくなる場合があります。)</small></p>
+                </div>
+                <div class="stepflow_title pt-4">キャンセル</div>
+                <div class="stepflow_content">
+                  <p class="card-text"><strong>納品前</strong>であれば、キャンセルも可能です。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="stepflow-black"></div>
+            <div class="stepflow_label">納品とお支払い</div>
+            <div class="stepflow_content">
+              <div class="row">
+                <div class="col col-12 col-md-6">
+                  <div class="stepflow_title">納品</div>
+                  <p class="card-text">形式の指定がない場合、納品する動画は次の形式となります。</p>
+                  <table class="table table-hover table-bordered">
+                    <tr><td>形式</td><td>MPEG-4 H.264（.mp4）</td></tr>
+                    <tr><td>画素</td><td>1080p</td></tr>
+                    <tr><td>総ビットレート</td><td>15000kbps</td></tr>
+                    <tr><td>音声</td><td>480kbps</td></tr>
+                  </table>
+                </div>
+                <div class="col col-12 col-md-6">
+                  <div class="stepflow_title">お支払い</div>
+                  <p class="card-text">現在対応しているお支払い方法は、<strong>Amazonギフト券</strong>です。</p>
+                  <p class="card-text">お支払い後の返金はいかなる理由でも致しかねます。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <!--  フッター  -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">&copy; 2020 <a href="https://twitter.com/higiri_4869">緋桐</a> and <a href="https://twitter.com/maoki0213">早川舞桜楓</a> All rights reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Design by <a href="https://twitter.com/higiri_4869">緋桐</a>.</div>
+          <div class="col-md-6 footer-social">
+            <a href="https://www.nicovideo.jp/mylist/55774189"><i class="icon-niconico"></i></a>
+            <a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/maoki0213"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+  <!-- Footer -->
   <!-- ページのトップへ戻るボタン -->
-  <p id="page-top"><a href="#">PAGE TOP</a></p>
+  <a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
+  <!-- ページのトップへ戻るボタン -->
 </body>
 </html>
