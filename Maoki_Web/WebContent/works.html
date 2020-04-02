@@ -52,23 +52,18 @@
       </div>
     </div>
   </nav>
-  <!--  ナビゲーションバー  -->
-
-<!--
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Works</h1>
-      <p>早川舞桜楓が制作に関わった動画たちです。</p>
-      <p>YouTube、niconicoのアイコンに、リンクが貼ってあります。ぜひご覧ください。</p>
-    </div>
-  </div>
- -->
-
+  <!--  ナビゲーションバー ここまで  -->
   <div class="container">
+    <!--  パンくずリスト  -->
     <ul class="breadcrumb">
       <li class="breadcrumb-item"><a href="./">Home</a></li>
       <li class="breadcrumb-item active">Works</li>
     </ul>
+    <div class="card mb-3">
+      <div class="card-body">
+        <p class="card-text">早川舞桜楓が制作に関わった動画や、個人制作のMVを紹介しています。<br />ゲームの実況プレイ動画やMAD/AMVは <a href="./game.html">こちら</a>。</p>
+      </div>
+    </div>
     <!-- 絞り込み -->
     <div class="mb-3">
       <button type="button" class="trigger active btn btn-outline-dark" data-filter="all">すべて</button
@@ -94,7 +89,7 @@
         <div class="input-group-prepend">
           <div class="input-group-text">検索</div>
         </div>
-        <input type="text" name="filtr-search" class="form-control" value="" placeholder="早川舞桜楓、2019、など" data-search="">
+        <input type="text" name="filtr-search" class="form-control" value="" placeholder="ここに検索内容を入力" data-search="">
       </div>
       </div>
     </div>
@@ -106,40 +101,56 @@
     *  filter       ：絞り込みの内容の範囲
     *  filtr-item   ：絞り込みの内容
     *
-    *  data-category：絞り込みの属性
+    *  data-category：絞り込みの属性（上のdata-filterの番号）
+    *  id           ：ページ内リンク用
     *  data-sort    ：ソート用
+    *
+    *  idとdata-sortの数字は投稿日の yymmdd とする。
     -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="200310">
+    <!-- 動画追加はここ -->
+      <div class="col pb-4 filtr-item" data-category="1" id="d200329" data-sort="200329">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail/2020-03-29.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【オリジナルMV】ゴーストルール　歌ってみた　【Rayz】</h5>
+            <p class="text-muted my-3">投稿者：Rayz mixing</p>
+            <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
+            <p class="card-text"><a href="https://www.youtube.com/watch?v=XQN-tnBYarA" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2020/03/29</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="2" id="d200310" data-sort="200310">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">シーサイドモーテル歌いたくて、歌わせていただきました</h5>
-            <h6 class="card-subtitle text-muted">投稿者：ヤミハ。</h6>
+            <p class="text-muted my-3">投稿者：ヤミハ。</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text"><a href="https://www.youtube.com/watch?v=p_QTbVuvcXY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1"  data-sort="200302">
+      <div class="col pb-4 filtr-item" data-category="1" id="d200302" data-sort="200302">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【オリジナルMV】アニソンメドレー　歌ってみた【紅蓮華/プライド革命/ピースサイン/redo/シルエット】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayzing</h6>
+            <p class="text-muted my-3">投稿者：Rayzing</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text"><a href="https://www.youtube.com/watch?v=ca1L3X_dhn0" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="200229">
+      <div class="col pb-4 filtr-item" data-category="2" id="d200229" data-sort="200229">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36440352.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【陰キャ学生が】猫猫的宇宙論　歌ってみた【るか】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：るか</h6>
+            <p class="text-muted my-3">投稿者：るか</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=1WZE9OMWvi4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36440352" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -148,24 +159,24 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/29</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="200214">
+      <div class="col pb-4 filtr-item" data-category="1" id="d200214" data-sort="200214">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">ギミック、歌ってみた【みーてぃー】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：【ᛗ】みー太郎</h6>
+            <p class="text-muted my-3">投稿者：【ᛗ】みー太郎</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm36362566" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/14</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="200129">
+      <div class="col pb-4 filtr-item" data-category="2" id="d200129" data-sort="200129">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36292123.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【陰キャ学生が】命ばっかり　歌ってみた【青瀬るか】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：るか</h6>
+            <p class="text-muted my-3">投稿者：るか</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=4cxUArcOm5k" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36292123" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -174,12 +185,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/29</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="200113">
+      <div class="col pb-4 filtr-item" data-category="2" id="d200113" data-sort="200113">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36222397.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ ハーゲンダッツ以下の殺風景 歌ってみた ／ 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=wHAwWFWJcFY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36222397" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -188,12 +199,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/13</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="200112">
+      <div class="col pb-4 filtr-item" data-category="2" id="d200112" data-sort="200112">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-01-12.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ 曖昧さ回避 (short version) 歌ってみた ／ 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=nbfduC-KhwY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -202,12 +213,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/12</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="191227">
+      <div class="col pb-4 filtr-item" data-category="2" id="d191227" data-sort="191227">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36143442.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ HAKOBAKO PLAYER-zawastyle- 歌ってみた ／ ２等身 × 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm36143442" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -216,12 +227,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/27</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="191210">
+      <div class="col pb-4 filtr-item" data-category="2" id="d191210" data-sort="191210">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-12-10.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ 白昼、黒く透明 歌ってみた ／ 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=UJ7fS0irsY4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -230,12 +241,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/12/10</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="3" data-sort="191027">
+      <div class="col pb-4 filtr-item" data-category="3" id="d191027" data-sort="191027">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【童謡】「チューリップ」ロックにしてみた的なやつ【アレンジ】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+            <p class="text-muted my-3">投稿者：早川舞桜楓</p>
             <p class="card-text"><span class="oi oi-tag"></span>個人制作</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=XMIqARcpfmc" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35870123" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -244,12 +255,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/10/27</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="191020">
+      <div class="col pb-4 filtr-item" data-category="1" id="d191020" data-sort="191020">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-10-20.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【替え歌】おじゃま虫/G36C 【Rayz】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayz mixing</h6>
+            <p class="text-muted my-3">投稿者：Rayz mixing</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=8NZ0MReh7gY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -258,12 +269,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/10/20</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190902">
+      <div class="col pb-4 filtr-item" data-category="2" id="d190902" data-sort="190902">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-09-02.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【初音ミク生誕記念】砂の惑星　DIVELA REMIX 【Rayz】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayz mixing</h6>
+            <p class="text-muted my-3">投稿者：Rayz mixing</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://youtu.be/FzHS1mikiHY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -272,12 +283,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/09/02</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="190901">
+      <div class="col pb-4 filtr-item" data-category="1" id="d190901" data-sort="190901">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-09-01.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【必死】今度は真面目に白日　歌ってみた【Rayz】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayz mixing</h6>
+            <p class="text-muted my-3">投稿者：Rayz mixing</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=6KOAj647anE" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -286,12 +297,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/09/01</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="190825">
+      <div class="col pb-4 filtr-item" data-category="1" id="d190825" data-sort="190825">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-08-25.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">ニャースで白日歌ったら事故すぎたｗｗｗｗｗｗｗｗｗｗｗｗｗｗ</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Rayz mixing</h6>
+            <p class="text-muted my-3">投稿者：Rayz mixing</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=nm7lC9eo7BU" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -300,12 +311,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/08/25</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190823">
+      <div class="col pb-4 filtr-item" data-category="2" id="d190823" data-sort="190823">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35581289.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">命に嫌われている。 歌ってみました【Light】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Light</h6>
+            <p class="text-muted my-3">投稿者：Light</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=EiCaSpK9q6Q" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35581289" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -314,12 +325,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/08/23</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190626">
+      <div class="col pb-4 filtr-item" data-category="2" id="d190626" data-sort="190626">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35302282.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【GUMI誕に】 クリプトグラフ 歌ってみた 【はらもり よしな】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：はらもり よしな</h6>
+            <p class="text-muted my-3">投稿者：はらもり よしな</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=-3Sh3uqUCVw" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35302282" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -328,12 +339,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/06/26</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190531">
+      <div class="col pb-4 filtr-item" data-category="2" id="d190531" data-sort="190531">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35201019.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【ここだけ90年代】T.M.Rの「HOT LIMIT」歌ってみた。タイ焼き屋</h5>
-            <h6 class="card-subtitle text-muted">投稿者：タイ焼き屋</h6>
+            <p class="text-muted my-3">投稿者：タイ焼き屋</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm35201019" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -342,12 +353,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/05/31</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="190523">
+      <div class="col pb-4 filtr-item" data-category="1" id="d190523" data-sort="190523">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm35163668.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【女５人で】KILLER B【歌ってみた】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：【ᛗ】みー太郎</h6>
+            <p class="text-muted my-3">投稿者：【ᛗ】みー太郎</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm35163668" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -356,12 +367,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/05/23</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190414">
+      <div class="col pb-4 filtr-item" data-category="2" id="d" data-sort="190414">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm34967788.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ 愛言葉 歌ってみた ／ 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=sMiYa3TCWzE" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm34967788" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -370,12 +381,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/04/14</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190408">
+      <div class="col pb-4 filtr-item" data-category="2" id="d" data-sort="190408">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm34933363.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">アウトサイダー 歌ってみました【Light】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Light</h6>
+            <p class="text-muted my-3">投稿者：Light</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=VpBTjSDpQTg" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm34933363" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -384,12 +395,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/04/08</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="3" data-sort="190312">
+      <div class="col pb-4 filtr-item" data-category="3" id="d190312" data-sort="190312">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【AviUtlで】おどりゃんせ【作ってみた】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：早川舞桜楓</h6>
+            <p class="text-muted my-3">投稿者：早川舞桜楓</p>
             <p class="card-text"><span class="oi oi-tag"></span>個人制作</p>
             <div class="card-text media mb-2">
               <a href="https://www.youtube.com/watch?v=sVoCTlPxbTg" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -408,12 +419,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/03/12</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="190219">
+      <div class="col pb-4 filtr-item" data-category="2" id="d190219" data-sort="190219">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2019-02-19.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜】OP曲「ラブ・ドラマティック feat. 伊原六花」 本気でカバーした</h5>
-            <h6 class="card-subtitle text-muted">投稿者：タイ焼き屋ちゃんねる</h6>
+            <p class="text-muted my-3">投稿者：タイ焼き屋ちゃんねる</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=9iG2uRTnpZA" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -422,12 +433,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2019/02/19</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="181115">
+      <div class="col pb-4 filtr-item" data-category="2" id="d181115" data-sort="181115">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-11-15.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">廃墟の国のアリスを歌ってみた / Light 【ワンコーラス】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Light</h6>
+            <p class="text-muted my-3">投稿者：Light</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=-uwtLwGTsoc" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -436,12 +447,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/11/15</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180909">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180909" data-sort="180909">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-09-09.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【劇場版 銀魂2 】 「大不正解」を全部俺の声だけで歌ってみた【back number】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：タイ焼き屋ちゃんねる</h6>
+            <p class="text-muted my-3">投稿者：タイ焼き屋ちゃんねる</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=4m4Mf_s76cI" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -450,12 +461,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/09/09</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180902">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180902" data-sort="180902">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33792744.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【back number】「大不正解」歌ってみた　ココル原人【銀魂2】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：ココル原人</h6>
+            <p class="text-muted my-3">投稿者：ココル原人</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=IwINw1L79II" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm33792744" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -464,12 +475,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/09/02</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180820">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180820" data-sort="180820">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33722128.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【初投稿】現役JKが『かいしんのいちげき！』歌ってみた ver.つゆりね</h5>
-            <h6 class="card-subtitle text-muted">投稿者：つゆりね</h6>
+            <p class="text-muted my-3">投稿者：つゆりね</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=FhaFdJbvHd4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm33722128" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -478,12 +489,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/20</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180824">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180824" data-sort="180824">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-08-24.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【受験生が】アサガオの散る頃に／歌ってみた(*´○`)o¶♪【お萩】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：お萩</h6>
+            <p class="text-muted my-3">投稿者：お萩</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=QtWTBQYPmW0" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -492,12 +503,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/24</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="180809">
+      <div class="col pb-4 filtr-item" data-category="1" id="d180809" data-sort="180809">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33663937.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【うらたぬき誕生祭】みんなでうらたさん描いてみた</h5>
-            <h6 class="card-subtitle text-muted">投稿者：あいぬん</h6>
+            <p class="text-muted my-3">投稿者：あいぬん</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=Uu2XEv8fdKE" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm33663937"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -506,12 +517,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/08/09</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="180706">
+      <div class="col pb-4 filtr-item" data-category="1" id="d180706" data-sort="180706">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-07-06.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">16人で歌い手さん描いてみた</h5>
-            <h6 class="card-subtitle text-muted">投稿者：はるはる</h6>
+            <p class="text-muted my-3">投稿者：はるはる</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=DutiLEZvWlg" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -520,12 +531,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/07/06</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180414">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180414" data-sort="180414">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33050766.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">▷ 【初投稿】 夜もすがら君想ふ 歌ってみた ／ 水月茉莉</h5>
-            <h6 class="card-subtitle text-muted">投稿者：水月茉莉</h6>
+            <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=ermfOREF0Io" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm33050766" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -534,12 +545,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/04/14</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="180408">
+      <div class="col pb-4 filtr-item" data-category="2" id="d180408" data-sort="180408">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm33018064.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">心做し×FUNKY MONKEY BABYSで歌ってみた☁　【Siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href=""><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -549,12 +560,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/04/08</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="180309">
+      <div class="col pb-4 filtr-item" data-category="1" id="d180309" data-sort="180309">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32858218.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">卒業生なので旅立ちの日にを歌ってみた☁　【Siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=27aQDCmqlFQ" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm32858218" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -563,12 +574,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/03/09</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="180101">
+      <div class="col pb-4 filtr-item" data-category="1" id="d180101" data-sort="180101">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2018-01-01.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">浦島坂田船描いてみた~恋愛ソング編~【inF∞ini】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：CHANNEL VillaiЙ_</h6>
+            <p class="text-muted my-3">投稿者：CHANNEL VillaiЙ_</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=wuVlT-Grt1I" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -577,12 +588,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2018/01/01</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="171105">
+      <div class="col pb-4 filtr-item" data-category="1" id="d171105" data-sort="171105">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32219731.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">ネタい手のくせに レミングミング 歌ってみた☁【Siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm32219731" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -591,12 +602,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/11/05</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="171031">
+      <div class="col pb-4 filtr-item" data-category="1" id="d171031" data-sort="171031">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32192888.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【合唱】Crazy∞nighT【歌ってみた】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：羽那</h6>
+            <p class="text-muted my-3">投稿者：羽那</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm32192888" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -605,12 +616,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/31</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="171028">
+      <div class="col pb-4 filtr-item" data-category="2" id="d171028" data-sort="171028">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32173565.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">砂の惑星／DIVELA REMIX　歌ってみた 【siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm32173565" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -619,12 +630,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/28</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="171024">
+      <div class="col pb-4 filtr-item" data-category="2" id="d171024" data-sort="171024">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32151447.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【再】ハッピーシンセサイザ　歌ってみた☁　【Siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm32151447" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -633,12 +644,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/24</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="171022">
+      <div class="col pb-4 filtr-item" data-category="1" id="d171022" data-sort="171022">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32139823.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【ネタ注意】ドラマツルギーを実況してみたｗｗｗ</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画(字幕付け)担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm32139823" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -647,12 +658,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/22</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="171007">
+      <div class="col pb-4 filtr-item" data-category="2" id="d171007" data-sort="171007">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm32057907.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">インナーダークを色々詰め込んで歌ってみた☁　【Siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=QkuayGmU4Nc" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm32057907" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -661,12 +672,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/10/07</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="170923">
+      <div class="col pb-4 filtr-item" data-category="2" id="d170923" data-sort="170923">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31979665.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">『歌い手の闇』病名は愛だったを無加工から超加工してみた結果ｗｗｗ</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=0ynmZd2TBw4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm31979665" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -675,12 +686,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/09/23</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="170811">
+      <div class="col pb-4 filtr-item" data-category="1" id="d170811" data-sort="170811">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31726610.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">心做し　歌ってみた　分香</h5>
-            <h6 class="card-subtitle text-muted">投稿者：分香</h6>
+            <p class="text-muted my-3">投稿者：分香</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm31726610" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -689,12 +700,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/08/11</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="170723">
+      <div class="col pb-4 filtr-item" data-category="2" id="d170723" data-sort="170723">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31620571.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">恋の魔法　歌ってみました【Light】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Light</h6>
+            <p class="text-muted my-3">投稿者：Light</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm31620571" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -703,12 +714,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/07/23</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="170619">
+      <div class="col pb-4 filtr-item" data-category="2" id="d170619" data-sort="170619">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm31425137.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">レディーレ　歌ってみた☁　【siu】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：☁siu☁</h6>
+            <p class="text-muted my-3">投稿者：☁siu☁</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=dwKgwiHNbx4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm31425137" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -717,12 +728,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/06/19</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="170211">
+      <div class="col pb-4 filtr-item" data-category="1" id="d170211" data-sort="170211">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm30613836.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【オリジナルPV】 『えれくとりっく・えんじぇぅ』 歌ってみた はまはま</h5>
-            <h6 class="card-subtitle text-muted">投稿者：はまはま</h6>
+            <p class="text-muted my-3">投稿者：はまはま</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=yWDPeowxhtI" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm30613836" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -731,12 +742,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2017/02/11</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" data-sort="161224">
+      <div class="col pb-4 filtr-item" data-category="2" id="d161224" data-sort="161224">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2016-12-24.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">-Tnr / メリュー歌ってみた /初投稿</h5>
-            <h6 class="card-subtitle text-muted">投稿者：秋ノ介</h6>
+            <p class="text-muted my-3">投稿者：秋ノ介</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=nYbd50xKvXI" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
@@ -745,12 +756,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/12/24</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="160817">
+      <div class="col pb-4 filtr-item" data-category="1" id="d160817" data-sort="160817">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm29464844.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">初音ミク【私がいること、わかってますか？】《オリジナル》</h5>
-            <h6 class="card-subtitle text-muted">投稿者：Emi Ele</h6>
+            <p class="text-muted my-3">投稿者：Emi Ele</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=toq5mmjodIQ" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm29464844" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -759,12 +770,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/08/17</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="160803">
+      <div class="col pb-4 filtr-item" data-category="1" id="d160803" data-sort="160803">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm29373232.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【GUMI】 TODESTRIEB 【オリジナル】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：yu-</h6>
+            <p class="text-muted my-3">投稿者：yu-</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.nicovideo.jp/watch/sm29373232" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -773,12 +784,12 @@
           <div class="card-footer"><small class="text-muted">投稿日：2016/08/03</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" data-sort="160505">
+      <div class="col pb-4 filtr-item" data-category="1" id="d160505" data-sort="160505">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm28782424.jpg" alt="サムネイル" />
           <div class="card-body">
             <h5 class="card-title">【初音ミク＆GUMI】Sky Dive【オリジナルMV】</h5>
-            <h6 class="card-subtitle text-muted">投稿者：AogmA</h6>
+            <p class="text-muted my-3">投稿者：Aog/mA</p>
             <p class="card-text"><span class="oi oi-tag"></span>動画担当</p>
             <p class="card-text">
               <a href="https://www.youtube.com/watch?v=cV2o6qc83yw" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm28782424" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
@@ -796,9 +807,9 @@
         <div class="row">
           <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Design by <a href="https://twitter.com/higiri_4869" target="_blank">緋桐</a>.</div>
           <div class="col-md-6 footer-social">
-            <a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico"></i></a>
-            <a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/maoki0213" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico"></i></a
+            ><a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a
+            ><a href="https://twitter.com/maoki0213" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>

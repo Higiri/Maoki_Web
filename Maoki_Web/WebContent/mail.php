@@ -332,22 +332,6 @@ else if($confirmDsp == 1){
     </form>
     <?php } ?>
   </div>
-  <!-- Footer -->
-  <footer>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Design by <a href="https://twitter.com/higiri_4869">緋桐</a>.</div>
-          <div class="col-md-6 footer-social">
-            <a href="https://www.nicovideo.jp/mylist/55774189"><i class="icon-niconico"></i></a>
-            <a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/maoki0213"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer -->
   <!-- ページのトップへ戻るボタン -->
   <a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
   <!-- ページのトップへ戻るボタン -->
@@ -359,7 +343,9 @@ else if($confirmDsp == 1){
 
 if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 && $sendmail == 0))) {
 
-/* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
+/* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　
+ * 使用しない
+ * */
 ?>
 <!DOCTYPE HTML>
 <html lang="ja">
@@ -388,7 +374,9 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </body>
 </html>
 <?php
-/* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　*/
+/* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　
+ *  使用しない
+ * */
   }
 }
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
