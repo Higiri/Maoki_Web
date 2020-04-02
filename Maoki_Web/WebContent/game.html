@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap (windyakin/Honoka) -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap v4.4 Grid cards -->
+  <link href="./css/bootstrap_plus.css" rel="stylesheet">
+  <!-- Original CSS -->
+  <link href="./css/style.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- Bootstrap Icon (Iconicのアイコン)-->
+  <link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <!-- Font Awesomeのアイコン -->
+  <script src="https://kit.fontawesome.com/9938a3005f.js" crossorigin="anonymous"></script>
+
+  <!-- トップへ戻るJS -->
+  <script src="./js/top.js"></script>
+
+  <!-- Filter -->
+  <script src="./js/filter.js"></script>
+
+  <title>Game &amp; MAD | 早川舞桜楓の非公式サイト</title>
+</head>
+<body>
+
+  <!--  ナビゲーションバー  -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="./">早川舞桜楓</a>
+
+      <!-- 幅がxs時に表示される、[≡] ボタン  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+
+      <!--  現在のページはactiveにする  -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  ナビゲーションバー  -->
+  <div class="container">
+    <!--  パンくずリスト  -->
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="./">Home</a></li>
+      <li class="breadcrumb-item"><a href="./works.html">Works</a></li>
+      <li class="breadcrumb-item active">Game &amp; MAD</li>
+    </ul>
+    <div class="card mb-3">
+      <div class="card-body">
+        <p class="card-text">早川舞桜楓が制作に関わった動画や、個人制作のMVは <a href="./works.html">こちら</a>。</p>
+      </div>
+    </div>
+    <!-- 絞り込み -->
+    <div class="mb-3">
+      <button type="button" class="trigger active btn btn-outline-dark" data-filter="all">すべて</button
+      ><div class="btn-group" role="group">
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="1">ゲーム実況</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="2">MAD</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="3">その他</button>
+        <button type="button" class="trigger btn btn-outline-dark" data-filter="4">制作協力</button>
+      </div>
+    </div>
+    <!-- ソートと検索 -->
+    <div class="form-row align-items-center mb-3">
+      <div class="col-auto my-1">
+      <select data-sortorder  class="custom-select">
+        <option value="index">投稿日</option>
+      </select>
+      </div>
+      <div class="btn-group col-auto my-1" role="group">
+        <button type="button"  class="sort active btn btn-outline-dark" data-sortasc>降順</button>
+        <button type="button"  class="sort btn btn-outline-dark" data-sortdesc>昇順</button>
+      </div>
+      <div class="col-auto my-1">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">検索</div>
+        </div>
+        <input type="text" name="filtr-search" class="form-control" value="" placeholder="ここに検索内容を入力" data-search="">
+      </div>
+      </div>
+    </div>
+
+    <!--
+    *  row row-cols-1：通常1列表示
+    *  row-cols-md-2：Medium(幅≧768px)のとき2列
+    *  row-cols-lg-3：Large (幅≧992px)のとき3列
+    *
+    *  filter       ：絞り込みの内容の範囲
+    *  filtr-item   ：絞り込みの内容
+    *
+    *  data-category：絞り込みの属性（上のdata-filterの番号）
+    *  id           ：ページ内リンク用
+    *  data-sort    ：ソート用
+    -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
+    <!-- 動画追加はここ -->
+      <div class="col pb-4 filtr-item" data-category="1" id="d200203" data-sort="200203">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20200203.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【War Thunder】Ju87 D-5【ゆっくり実況】Part.3</h5>
+            <p class="card-text"><a href="https://www.youtube.com/watch?v=3PppxLvwsWI&t=10s" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2020/02/03</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="3" id="d191117" data-sort="191117">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20191117.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【ゆずソフト】喫茶ステラと死神の蝶OPに中毒になる動画</h5>
+            <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm35964012" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/11/17</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="1" id="d191111" data-sort="191111">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20191111.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【War Thunder】Bf109 F-4【ゆっくり実況】Part.2.5</h5>
+            <p class="card-text"><a href="https://www.youtube.com/watch?v=Lw8j-flSStg" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35941603" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/11/11</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="4" id="d190928" data-sort="190928">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190928.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【再現MAD】アストラル使いが集う学院に通う、貧乳はどうすりゃいいですか？【ぬきたし2】</h5>
+            <p class="text-muted my-3">投稿者：緋桐（Higiri）</p>
+            <p class="card-text"><span class="oi oi-tag"></span>制作協力</p>
+            <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm35930291" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a><a href="https://www.youtube.com/watch?v=kz6wwlH80Vw" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/09/28</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="1" id="d190922" data-sort="190922">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190922.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【War Thunder】Crusader MK.3【ゆっくり実況】Part.2</h5>
+            <p class="card-text"><a href="https://www.youtube.com/watch?v=p4p8N6egF_4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35714014" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/09/22</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="1" id="d190919" data-sort="190919">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190919.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【War Thunder】Fw190 A-5【ゆっくり実況】Part.1</h5>
+            <p class="card-text"><a href="https://www.youtube.com/watch?v=C8UfKqG0TUw" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm35700362" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/09/19</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="2" id="d190828" data-sort="190828">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190828.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【途中】はるいろはるこいはるのおとOP×RIDDLE JOKER【再現MAD】</h5>
+            <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm35601289" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/08/28</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="2" id="d190826" data-sort="190826">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190826.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【途中】抜きたし2OP FULL【MAD】</h5>
+            <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm35595289" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/08/26</small></div>
+        </div>
+      </div>
+      <div class="col pb-4 filtr-item" data-category="4" id="d190515" data-sort="190515">
+        <div class="card">
+          <img class="card-img-top" src="./image/thumbnail_game/20190515.jpg" alt="サムネイル" />
+          <div class="card-body">
+            <h5 class="card-title">【再現MAD】ご注文は『しゅがてん！』ですか？</h5>
+            <p class="text-muted my-3">投稿者：緋桐（Higiri）</p>
+            <p class="card-text"><span class="oi oi-tag"></span>制作協力</p>
+            <p class="card-text"><a href="https://www.nicovideo.jp/watch/sm35128912" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a><a href="https://www.youtube.com/watch?v=w4BVP2dRfa8" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a></p>
+          </div>
+          <div class="card-footer"><small class="text-muted">投稿日：2019/05/15</small></div>
+        </div>
+      </div>
+    </div>    <!--  Grid cards  -->
+  </div>      <!--  container   -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Design by <a href="https://twitter.com/higiri_4869" target="_blank">緋桐</a>.</div>
+          <div class="col-md-6 footer-social">
+            <a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico"></i></a
+            ><a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a
+            ><a href="https://twitter.com/maoki0213" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- ページのトップへ戻るボタン -->
+  <a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
+  <!-- フィルター&ソート用JS -->
+  <script src="./js/jquery.filterizr.min.js"></script>
+</body>
+</html>

@@ -245,3 +245,15 @@ ul.stepflow > li:before, ol.stepflow > li:before {
 .footer-copyright { padding-top: 5px; }
 .footer-copyright a { color: #222; border: 0; }
 .footer-copyright a:hover, .footer-copyright a:focus { color: #000; border: 0; }
+
+.footer-secret {
+	color: #f5f5f5;
+}
+.footer-secret a {
+	color: #f5f5f5;
+	border: 0;
+}
+.footer-secret a:hover {
+	color: #f5f5f5;
+	border: 0;
+}
