@@ -13,7 +13,7 @@ https://h-maoki.com/
 - https://github.com/twbs/bootstrap
 - https://getbootstrap.jp/
 
-#### Honoka
+#### Honoka (Bootstrapテーマ)
 - https://github.com/windyakin/Honoka
 - https://honokak.osaka/
 
