@@ -278,7 +278,7 @@ else if($confirmDsp == 1){
   <!-- トップへ戻るJS -->
   <script src="./js/top.js"></script>
 
-  <title>確認画面 | 早川舞桜楓の非公式サイト</title>
+  <title>確認画面 | 早川舞桜楓 公式サイト</title>
 </head>
 <body>
   <!--  ナビゲーションバー  -->
