@@ -65,13 +65,16 @@
       </div>
     </div>
     <!-- 絞り込み -->
-    <div class="mb-3">
-      <button type="button" class="trigger active btn btn-outline-dark" data-filter="all">すべて</button>
-      <div class="btn-group" role="group">
-        <button type="button" class="trigger btn btn-outline-dark" data-filter="1">動画担当</button>
-        <button type="button" class="trigger btn btn-outline-dark" data-filter="2">エンコード担当</button>
-        <button type="button" class="trigger btn btn-outline-dark" data-filter="3">個人制作</button>
-      </div>
+    <button type="button" class="trigger active btn btn-outline-dark mb-2" data-filter="all">すべて</button>
+    <div class="btn-group mb-2" role="group">
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="1">動画担当</button>
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="2">エンコード担当</button>
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="3">個人制作</button>
+    </div>
+    <div class="btn-group mb-2" role="group">
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="11">YouTube</button>
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="12">niconico</button>
+      <button type="button" class="trigger btn btn-outline-dark" data-filter="13">Twitter</button>
     </div>
     <!-- ソートと検索 -->
     <div class="form-row align-items-center mb-3">
@@ -109,7 +112,7 @@
     -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
     <!-- 動画追加はここ -->
-    <div class="col pb-4 filtr-item" data-category="2" id="d200414" data-sort="200414">
+    <div class="col pb-4 filtr-item" data-category="2, 11, 12" id="d200414" data-sort="200414">
       <div class="card">
         <img class="card-img-top" src="./image/thumbnail/sm36676552.jpg" alt="サムネイル" />
         <div class="card-body">
@@ -117,13 +120,13 @@
           <p class="text-muted my-3">投稿者：水月茉莉</p>
           <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
           <p class="card-text">
-            <a href="https://www.youtube.com/watch?v=0P-vjp5AlrU&feature" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-            <a href="https://www.nicovideo.jp/watch/sm36676552" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a></p>
+            <a href="https://www.youtube.com/watch?v=0P-vjp5AlrU&feature" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36676552" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
+          </p>
         </div>
         <div class="card-footer"><small class="text-muted">投稿日：2020/04/14</small></div>
       </div>
     </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200412" data-sort="200412">
+      <div class="col pb-4 filtr-item" data-category="2, 13" id="d200412" data-sort="200412">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-04-12.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -135,7 +138,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/04/12</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" id="d200329" data-sort="200329">
+      <div class="col pb-4 filtr-item" data-category="1, 11" id="d200329" data-sort="200329">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-29.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -147,7 +150,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/29</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200325" data-sort="200325">
+      <div class="col pb-4 filtr-item" data-category="2, 13" id="d200325" data-sort="200325">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-25.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -159,7 +162,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/25</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200310" data-sort="200310">
+      <div class="col pb-4 filtr-item" data-category="2, 11" id="d200310" data-sort="200310">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-10.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -171,7 +174,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/10</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200303" data-sort="200303">
+      <div class="col pb-4 filtr-item" data-category="2, 13" id="d200303" data-sort="200303">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-03.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -184,7 +187,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/03</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" id="d200302" data-sort="200302">
+      <div class="col pb-4 filtr-item" data-category="1, 11" id="d200302" data-sort="200302">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-03-02.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -196,7 +199,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/03/02</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200229" data-sort="200229">
+      <div class="col pb-4 filtr-item" data-category="2, 11" id="d200229" data-sort="200229">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36440352.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -204,14 +207,13 @@
             <p class="text-muted my-3">投稿者：るか</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
-              <a href="https://www.youtube.com/watch?v=1WZE9OMWvi4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-              <a href="https://www.nicovideo.jp/watch/sm36440352" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
+              <a href="https://www.youtube.com/watch?v=1WZE9OMWvi4" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36440352" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
             </p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/29</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="2" id="d200215" data-sort="200215">
+      <div class="col pb-4 filtr-item" data-category="2, 11" id="d200215" data-sort="200215">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/2020-02-15.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -225,7 +227,7 @@
           <div class="card-footer"><small class="text-muted">投稿日：2020/02/15</small></div>
         </div>
       </div>
-      <div class="col pb-4 filtr-item" data-category="1" id="d200214" data-sort="200214">
+      <div class="col pb-4 filtr-item" data-category="1, 12" id="d200214" data-sort="200214">
         <div class="card">
           <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="サムネイル" />
           <div class="card-body">
@@ -245,8 +247,7 @@
             <p class="text-muted my-3">投稿者：るか</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
-              <a href="https://www.youtube.com/watch?v=4cxUArcOm5k" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-              <a href="https://www.nicovideo.jp/watch/sm36292123" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
+              <a href="https://www.youtube.com/watch?v=4cxUArcOm5k" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36292123" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
             </p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/29</small></div>
@@ -260,8 +261,7 @@
             <p class="text-muted my-3">投稿者：水月茉莉</p>
             <p class="card-text"><span class="oi oi-tag"></span>エンコード担当</p>
             <p class="card-text">
-              <a href="https://www.youtube.com/watch?v=wHAwWFWJcFY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-              <a href="https://www.nicovideo.jp/watch/sm36222397" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
+              <a href="https://www.youtube.com/watch?v=wHAwWFWJcFY" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a><a href="https://www.nicovideo.jp/watch/sm36222397" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
             </p>
           </div>
           <div class="card-footer"><small class="text-muted">投稿日：2020/01/13</small></div>
