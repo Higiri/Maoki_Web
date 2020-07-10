@@ -6,16 +6,16 @@
 .swiper-slide .slide-content h3 {
   position: absolute;
   top: 20%;
-  left: 10%;
-  transform: translate(-0%, -20%);
+  left: 20%;
+  transform: translate(-10%, -10%);
   color: #FFF;
   font-size: 24px;
   text-shadow: 2px 2px rgba(0,0,0,0.5);
-  background-color: rgba(32,32,32,0.3);
+  background-color: rgba(32,32,32,0.4);
 }
 .swiper-slide .slide-content p {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(32,32,32,0.5);
