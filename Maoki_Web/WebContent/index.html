@@ -26,7 +26,7 @@
   <script src="./js/top.js"></script>
 
   <!-- Swiper CS  -->
-  <link href="./css/swiper.min.css" rel="stylesheet">
+  <link href="./css/swiper.css" rel="stylesheet">
   <!-- ※Swiperの初期設定, JS読み込みはbody最下部に配置すること  -->
 
   <title>早川舞桜楓 公式サイト</title>
@@ -53,33 +53,58 @@
   </nav>
   <!--  ナビゲーションバー  -->
   <!-- Swiper -->
-  <div class="container">
+  <!-- <div class="container">-->
     <div class="swiper-container mt-2">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" />
+          <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" />
+          <div class="slide-content">
+            <h1>【AviUtlで】おどりゃんせ【作ってみた】</h1>
+            <div class="caption"><a href="https://www.youtube.com/watch?v=sVoCTlPxbTg"><i class="fab fa-youtube"></i></a></div>
+            <p>必要なら、ここに説明文を追加</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/sm35872542.jpg" />
+          <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" />
+          <div class="slide-content">
+            <h1>ギミック、歌ってみた【みーてぃー】</h1>
+            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm36362566"><i class="icon-niconico"></i></a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="card-img-top" src="https://h-maoki.com/image/thumbnail/2020-05-31.jpg" />
+          <div class="slide-content">
+            <h1>花に亡霊 / ヨルシカ(Cover)７℃</h1>
+            <div class="caption"><a href="https://www.youtube.com/watch?v=aZyw0GgUIhg"><i class="fab fa-youtube"></i></a></div>
+          </div>
         </div>
         <div class="swiper-slide">
           <img class="card-img-top" src="./image/thumbnail/sm35163668.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" />
+          <div class="slide-content">
+            <h1>【女５人で】KILLER B【歌ってみた】</h1>
+            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm35163668"><i class="icon-niconico"></i></a></div>
+          </div>
         </div>
         <div class="swiper-slide">
           <img class="card-img-top" src="./image/thumbnail/sm29464844.jpg" />
+          <div class="slide-content">
+            <h1>初音ミク【私がいること、わかってますか？】《オリジナル》</h1>
+            <div class="caption"><a href="https://www.youtube.com/watch?v=toq5mmjodIQ"><i class="fab fa-youtube"></i></a></div>
+          </div>
         </div>
         <div class="swiper-slide">
           <img class="card-img-top" src="./image/thumbnail/sm28782424.jpg" />
+          <div class="slide-content">
+            <h1>【初音ミク＆GUMI】Sky Dive【オリジナルMV】</h1>
+            <div class="caption"><a href="https://www.youtube.com/watch?v=cV2o6qc83yw"><i class="fab fa-youtube"></i></a></div>
+          </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </div>
+  <!-- </div>
   <!-- Swiper -->
   <!-- 以下内容 -->
 
@@ -131,7 +156,7 @@
               <div class="card-header">
                 <p class="my-0 font-weight-normal">最新の動画作成担当</p>
               </div>
-              <img class="card-img-top" src="./image/thumbnail/2020-06-03.jpg" alt="サムネイル" />
+              <img class="card-img-top" src="https://h-maoki.com/image/thumbnail/2020-06-03.jpg" alt="サムネイル" />
               <div class="card-body">
                 <h5 class="card-title">【ロリ×ショタで】ELECT 歌ってみた。【#13歳】</h5>
                 <p class="text-muted my-3">投稿者：カレンドール</p>
@@ -145,7 +170,7 @@
               <div class="card-header">
                 <p class="my-0 font-weight-normal">最新のエンコード担当</p>
               </div>
-              <img class="card-img-top" src="./image/thumbnail/2020-05-31_3.jpg" alt="サムネイル" />
+              <img class="card-img-top" src="https://h-maoki.com/image/thumbnail/2020-05-31_3.jpg" alt="サムネイル" />
               <div class="card-body">
                 <h5 class="card-title">ビーバー / 儚</h5>
                 <p class="text-muted my-3">投稿者：儚</p>
@@ -194,8 +219,10 @@
       <div class="col-11 col-sm-8 col-lg-4 mb-4">
         <div class="card">
           <div class="text-center">
-            <!-- Twitterの埋め込み -->
+            <!-- Twitterの埋め込み-->
             <a class="twitter-timeline" data-lang="ja" data-height="1000" href="https://twitter.com/hayakawamaoki?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
           </div>
         </div>
       </div>
@@ -238,7 +265,7 @@
       prevEl: '.swiper-button-prev',
     },
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false
     },
     pagination: {
@@ -247,7 +274,7 @@
       clickable: true,
     },
     breakpoints: {
-        768: {
+        576: {
             slidesPerView: 2,
             slidesPerGroup: 1,
           },

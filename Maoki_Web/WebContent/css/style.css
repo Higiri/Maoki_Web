@@ -1,4 +1,45 @@
 /*
+ * swiperのスライド上のテキスト
+ */
+.swiper-slide .slide-content h1,
+.swiper-slide .slide-content h2,
+.swiper-slide .slide-content h3 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-0%, -20%);
+  color: #FFF;
+  font-size: 24px;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+  background-color: rgba(32,32,32,0.3);
+}
+.swiper-slide .slide-content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(32,32,32,0.5);
+  color: #FFF;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+.swiper-slide .slide-content .caption {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #FFF;
+  font-size: 16px;
+  background-color: rgba(32,32,32,0.5);
+  padding: 3px 8px;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+.swiper-slide .slide-content .caption a {
+  color: #fff;
+}
+.swiper-slide .slide-content .caption a:hover {
+  color: #ddd;
+}
+
+/*
  * niconicoのアイコンフォント
  */
 
