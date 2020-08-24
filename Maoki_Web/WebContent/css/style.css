@@ -1,5 +1,5 @@
 /*
- * swiperのスライド上のテキスト
+ * swiper text
  */
 .swiper-slide .slide-content h1,
 .swiper-slide .slide-content h2,
@@ -40,7 +40,7 @@
 }
 
 /*
- * niconicoのアイコンフォント
+ * niconico icon font
  */
 
 @font-face {
@@ -76,7 +76,7 @@
 }
 
 /*
- * niconicoのアイコンフォント
+ * niconico icon font
  */
 
 
@@ -88,7 +88,7 @@
 }
 
 /*
- *ステップフロー
+ * stepflow
  */
 ul.stepflow {
 	border: none;
