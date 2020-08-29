@@ -1,284 +1,345 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap (windyakin/Honoka) -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <!-- Honoka が未対応の Bootstrap ver4.4 で追加された Grid cards  -->
-  <link href="./css/bootstrap_plus.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/bootstrap_plus.css" rel="stylesheet">
+	<!-- Swiper -->
+	<link href="./css/swiper.css" rel="stylesheet">
+	<!-- CSS -->
+	<link href="./css/style.css" rel="stylesheet">
 
-  <!-- Original CSS -->
-  <link href="./css/style.css" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- js -->
+	<script src="./js/bootstrap.min.js"></script>
+	<!-- Bootstrap Icon / Iconic -->
+	<link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<!-- Font Awesome icon -->
+	<script src="https://kit.fontawesome.com/9938a3005f.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Bootstrap js -->
-  <script src="./js/bootstrap.min.js"></script>
-  <!-- Bootstrap Icon (Iconicのアイコン)-->
-  <link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
-  <!-- Font Awesomeのアイコン -->
-  <script src="https://kit.fontawesome.com/9938a3005f.js" crossorigin="anonymous"></script>
+	<!-- go top JS -->
+	<script src="./js/top.js"></script>
 
-  <!-- トップへ戻るJS -->
-  <script src="./js/top.js"></script>
-
-  <!-- Swiper CS  -->
-  <link href="./css/swiper.css" rel="stylesheet">
-  <!-- ※Swiperの初期設定, JS読み込みはbody最下部に配置すること  -->
-
-  <title>早川舞桜楓 公式サイト</title>
+	<title>早川舞桜楓 公式サイト</title>
 </head>
-<body>
-  <!--  ナビゲーションバー  -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="./">早川舞桜楓</a>
-      <!-- 幅がxs時に表示される、[≡] ボタン  -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span></button>
-      <!--  現在のページはactiveにする  -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="./">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
-          <li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213" target="_blank">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--  ナビゲーションバー  -->
-  <!-- Swiper -->
-  <!-- <div class="container">-->
-    <div class="swiper-container mt-2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/2020-08-14.jpg" alt="【歌ってみた】 SUPER NOVA 【ほよくぬ×浅井ゆう】"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm37350124" target="_blank"><i class="fab fa-youtube"></i></a></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="ギミック、歌ってみた【みーてぃー】"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm36362566" target="_blank"><i class="icon-niconico"></i></a></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="image/thumbnail/2020-05-31.jpg" alt="花に亡霊/ヨルシカ(Cover)７℃"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.youtube.com/watch?v=aZyw0GgUIhg" target="_blank"><i class="fab fa-youtube"></i></a></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/2020-08-08.jpg" alt="がちりん"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm37319766" target="_blank"><i class="icon-niconico"></i></a></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/2020-07-24.jpg" alt="コネクト(カバーアレンジ) ver.ColoFusion (みー太郎＆こりん)"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.nicovideo.jp/watch/sm37232017" target="_blank"><i class="icon-niconico"></i></a></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="card-img-top" src="./image/thumbnail/sm28782424.jpg"  alt="【初音ミク＆GUMI】Sky Dive【オリジナルMV】"/>
-          <div class="slide-content">
-            <div class="caption"><a href="https://www.youtube.com/watch?v=cV2o6qc83yw" target="_blank"><i class="fab fa-youtube"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  <!-- </div>
-  <!-- Swiper -->
-  <!-- 以下内容 -->
+<body class="body_gray">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-sm navbar-light bg-white">
+		<div class="container">
+			<h1 class="navbar-brand">早川舞桜楓</h1>
+			<!-- [≡] ボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span></button>
+			<!-- 現在のページはactive -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="./">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
+					<li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
+					<li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw" target="_blank">YouTube</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.nicovideo.jp/user/54786827/mylist/55774189" target="_blank">niconico</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar -->
+	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img class="card-img-top" src="./image/thumbnail/2020-08-14.jpg" alt="【歌ってみた】 SUPER NOVA 【ほよくぬ×浅井ゆう】"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.nicovideo.jp/watch/sm37350124" target="_blank"><i class="fab fa-youtube"></i></a></div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="card-img-top" src="./image/thumbnail/sm36362566.jpg" alt="ギミック、歌ってみた【みーてぃー】"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.nicovideo.jp/watch/sm36362566" target="_blank"><i class="icon-niconico"></i></a></div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="card-img-top" src="image/thumbnail/2020-05-31.jpg" alt="花に亡霊/ヨルシカ(Cover)７℃"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.youtube.com/watch?v=aZyw0GgUIhg" target="_blank"><i class="fab fa-youtube"></i></a></div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="card-img-top" src="./image/thumbnail/2020-07-24.jpg" alt="コネクト(カバーアレンジ) ver.ColoFusion (みー太郎＆こりん)"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.nicovideo.jp/watch/sm37232017" target="_blank"><i class="icon-niconico"></i></a></div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="card-img-top" src="./image/thumbnail/2020-08-08.jpg" alt="がちりん"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.nicovideo.jp/watch/sm37319766" target="_blank"><i class="icon-niconico"></i></a></div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="card-img-top" src="./image/thumbnail/sm28782424.jpg"	alt="【初音ミク＆GUMI】Sky Dive【オリジナルMV】"/>
+				<div class="slide-content">
+					<div class="caption"><a href="https://www.youtube.com/watch?v=cV2o6qc83yw" target="_blank"><i class="fab fa-youtube"></i></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+	<!-- Swiper -->
+	<!-- contents -->
+	<!--
+	<section id="about" class="section section-default point">
+		<div class="container">
+			<h2>Welcome</h2>
+			<div class="row">
+				<div class="col-6 col-md-3 point-box">
+					<div class="point-circle maoki_icon"><i class="fas fa-id-card-alt icon_white"></i></div>
+					<div class="point-description">
+						<h3>About</h3>
+						<p>このサイトでは、映像クリエイター 早川舞桜楓 の活動を紹介しています。</p>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 point-box">
+					<div class="point-circle works_icon">
+						<a href="./works.html"><i class="fas fa-video icon_white"></i></a>
+					</div>
+					<div class="point-description">
+						<h3>Works</h3>
+						<p>制作に関わった動画は<a href="./works.html">Works</a>で紹介しています。</p>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 point-box">
+					<div class="point-circle request">
+						<a href="./request.html"><i class="fas fa-clipboard icon_white"></i></a>
+					</div>
+					<div class="point-description">
+						<h3>Request</h3>
+						 <p>ご依頼に関する情報は<a href="./request.html">Request</a>をご確認ください。</p>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 point-box">
+					<div class="point-circle contact">
+						<a href="./contact.html"><i class="fas fa-mail-bulk icon_white"></i></a>
+					</div>
+					<div class="point-description">
+						<h3>Contact</h3>
+						 <p>お問い合わせは<a href="./contact.html">Contact</a>をご確認ください。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	<section id="works">
+		<div class="container">
+			<h2>Works<span class="right_link"><a href="./works.html"><button type="button" class="btn btn-outline-primary btn-sm">Go All Works</button></a><br>Last Update: 2020/08/26</span></h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2020-08-14.jpg" alt="【歌ってみた】SUPER NOVA【ほよくぬ×浅井ゆう】">
+						<div class="card-body">
+							<h3 class="card-title">【歌ってみた】SUPER NOVA【ほよくぬ×浅井ゆう】</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2020/08/14</p>
+								<p><i class="fas fa-user"></i>ボアルネ</p>
+								<p><i class="oi oi-tag"></i>動画担当</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=Z8M-4VYJfCU" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+								<p><a href="https://www.nicovideo.jp/watch/sm37350124" target="_blank"><img src="./image/icon_niconico.png" alt="niconico"></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2020-08-08.jpg" alt="がちりん">
+						<div class="card-body">
+							<h3 class="card-title">がちりん</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2020/08/08</p>
+								<p><i class="fas fa-user"></i>冒涜</p>
+								<p><i class="oi oi-tag"></i>動画担当</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.nicovideo.jp/watch/sm37319766" target="_blank"><img src="./image/icon_niconico.png" alt="niconico"></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2020-07-24.jpg" alt="コネクト(カバーアレンジ) ver.ColoFusion (みー太郎＆こりん)">
+						<div class="card-body">
+							<h3 class="card-title">コネクト(カバーアレンジ) ver.ColoFusion (みー太郎＆こりん)</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2020/07/24</p>
+								<p><i class="fas fa-user"></i>点五P@ColoFusion</p>
+								<p><i class="oi oi-tag"></i>動画担当</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=RzUmartHWM4" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+								<p><a href="https://www.nicovideo.jp/watch/sm37232017" target="_blank"><img src="./image/icon_niconico.png" alt="niconico"></a></p>
+								<p>みー太郎＆こりん<br>ver.ColoFusion</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=1mq9dm5C2t4" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+								<p><a href="https://www.nicovideo.jp/watch/sm37232154" target="_blank"><img src="./image/icon_niconico.png" alt="niconico"></a></p>
+								<p>GUMI/初音ミク<br>EDM Cover</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2020-06-28.jpg" alt="【初投稿】コールボーイ　歌ってみた【オリジナルMV】">
+						<div class="card-body">
+							<h3 class="card-title">【初投稿】コールボーイ　歌ってみた【オリジナルMV】</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2020/06/28</p>
+								<p><i class="fas fa-user"></i>逢坂ぬん</p>
+								<p><i class="oi oi-tag"></i>動画担当</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=ynyq0fgpb0Y" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2020-05-31.jpg" alt="花に亡霊 / ヨルシカ(Cover)７℃">
+						<div class="card-body">
+							<h3 class="card-title">花に亡霊 / ヨルシカ(Cover)７℃</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2020/05/31</p>
+								<p><i class="fas fa-user"></i>７℃</p>
+								<p><i class="oi oi-tag"></i>動画担当</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=aZyw0GgUIhg" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-4">
+					<div class="card border-light">
+						<img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="【AviUtlで】おどりゃんせ【作ってみた】">
+						<div class="card-body">
+							<h3 class="card-title">【AviUtlで】おどりゃんせ【作ってみた】</h3>
+							<div class="works-data">
+								<p><i class="fas fa-calendar"></i>2019/03/12</p>
+								<p><i class="fas fa-user"></i>早川舞桜楓</p>
+								<p><i class="oi oi-tag"></i>個人制作</p>
+							</div>
+							<div class="works-link">
+								<p><a href="https://www.youtube.com/watch?v=sVoCTlPxbTg" target="_blank"><img src="./image/icon_youtube.png" alt="YouTube"></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xl-5 px-4 footer-about text-center">
+						<img src="./image/maoki.png" alt="早川舞桜楓" class="rounded-circle logo-footer">
+						<p><strong>早川舞桜楓</strong>はMV制作を中心に活動する、<br>映像クリエイターです。</p>
+					</div>
+					<div class="col-md-6 col-lg-5 offset-lg-1 col-xl-4 px-4 mb-4 footer-mid">
+						<h3>Contact</h3>
+						<p><i class="fas fa-envelope"></i>Email: hayakawamaoki@gmail.com</p>
+						<p><i class="fas fa-envelope"></i>MailForm: <a href="./contact.html">Contact</a></p>
+						<p><i class="fab fa-twitter"></i>Main account: <a href="https://twitter.com/maoki0213" target="_blank">@maoki0213</a></p>
+						<p><i class="fab fa-twitter"></i>For work: <a href="https://twitter.com/hayakawamaoki" target="_blank">@hayakawamaoki</a></p>
+					</div>
+					<div class="col-md-2 mb-4 footer-links">
+						<div class="row px-4">
+							<h3>Links</h3>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-12 px-4">
+								<p><a class="fotter-links-active" href="#">Home</a></p>
+								<p><a href="./works.html">Works</a></p>
+							</div>
+							<div class="col-6 col-md-12 px-4">
+								<p><a href="./request.html">Request</a></p>
+								<p><a href="./contact.html">Contact</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Designed by Higiri.</div>
+					<div class="col-md-6 footer-social">
+						<a href="./game.html"><i class="fas fa-door-closed footer-secret"></i></a>
+						<a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico footer-niconico"></i></a>
+						<a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber" target="_blank"><i class="fab fa-youtube footer-youtube"></i></a>
+						<a href="https://twitter.com/maoki0213" target="_blank"><i class="fab fa-twitter footer-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	<!-- ページのトップへ戻るボタン -->
+	<a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
+	<!-- ページのトップへ戻るボタン -->
 
-  <section class="section section-default point">
-    <div class="container">
-    <div class="row">
-      <div class="col-12 subtitle">
-        <p class="lead">このサイトでは、早川舞桜楓の活動を紹介しています。</p>
-      </div>
-    </div>
-      <div class="row">
-        <div class="col-6 col-md-4 point-box">
-          <div class="point-circle works_icon">
-            <a href="./works.html"><i class="fas fa-video icon_white"></i></a>
-          </div>
-          <div class="point-description">
-            <h4>Works</h4>
-            <p>早川舞桜楓が制作に関わった動画は<a href="./works.html">Works</a>で紹介しています。ぜひご覧ください。</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 point-box">
-          <div class="point-circle request">
-            <a href="./request.html"><i class="fas fa-clipboard icon_white"></i></a>
-          </div>
-          <div class="point-description">
-            <h4>Request</h4>
-             <p>無償・有償の映像制作の依頼を受け付けています。依頼の手順や流れ、料金については<a href="./request.html">Request</a>をご確認ください。</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 point-box">
-          <div class="point-circle contact">
-            <a href="./contact.html"><i class="fas fa-mail-bulk icon_white"></i></a>
-          </div>
-          <div class="point-description">
-            <h4>Contact</h4>
-             <p>依頼や各種お問い合わせは<a href="./contact.html">Contact</a>をご確認ください。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="container">
-    <div class="row">
-      <!-- Large以上なら8グリッド -->
-      <div class="col-lg-8">
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="my-0 font-weight-normal">最新の動画作成担当</p>
-              </div>
-              <img class="card-img-top" src="./image/thumbnail/2020-08-14.jpg" alt="サムネイル" />
-              <div class="card-body">
-                <h5 class="card-title">【歌ってみた】 SUPER NOVA 【ほよくぬ×浅井ゆう】</h5>
-                <p class="text-muted my-3">投稿者：ボアルネ</p>
-                <p class="card-text">
-                  <a href="https://www.youtube.com/watch?v=Z8M-4VYJfCU" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-                  <a href="https://www.nicovideo.jp/watch/sm37350124" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
-                </p>
-              </div>
-              <div class="card-footer"><small class="text-muted">投稿日：2020/08/14</small></div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="my-0 font-weight-normal">最新のエンコード担当</p>
-              </div>
-              <img class="card-img-top" src="./image/thumbnail/2020-08-23.jpg" alt="サムネイル" />
-              <div class="card-body">
-                <h5 class="card-title">▷ 【誕生日に】 また同じ夢を見てる 歌ってみた ／ 水月茉莉</h5>
-                <p class="text-muted my-3">投稿者：水月茉莉</p>
-                <p class="card-text">
-                  <a href="https://www.youtube.com/watch?v=_h82MoaqxGI" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-                  <a href="https://www.nicovideo.jp/watch/sm37400289" target="_blank"><img src="./image/icon_niconico.png" class="mx-2" /></a>
-                </p>
-              </div>
-              <div class="card-footer"><small class="text-muted">投稿日：2020/08/23</small></div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="my-0 font-weight-normal">個人制作作品</p>
-              </div>
-              <img class="card-img-top" src="./image/thumbnail/sm35870123.jpg" alt="サムネイル" />
-                <div class="card-body">
-                  <h5 class="card-title">【童謡】「チューリップ」ロックにしてみた的なやつ【アレンジ】</h5>
-                  <h6 class="card-subtitle text-muted my-3">投稿者：早川舞桜楓</h6>
-                  <p class="card-text">
-                    <a href="https://www.youtube.com/watch?v=XMIqARcpfmc" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-                    <a href="https://www.nicovideo.jp/watch/sm35870123"><img src="./image/icon_niconico.png" class="mx-2" /></a>
-                  </p>
-                </div>
-              <div class="card-footer"><small class="text-muted">投稿日：2019/10/27</small></div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="my-0 font-weight-normal">個人制作作品</p>
-              </div>
-              <img class="card-img-top" src="./image/thumbnail/2019-03-12.jpg" alt="サムネイル" />
-              <div class="card-body">
-                <h5 class="card-title">【AviUtlで】おどりゃんせ【作ってみた】</h5>
-                <h6 class="card-subtitle text-muted my-3">投稿者：早川舞桜楓</h6>
-                <div class="card-text">
-                  <a href="https://www.youtube.com/watch?v=sVoCTlPxbTg" target="_blank"><img src="./image/icon_youtube.png" class="mx-2" /></a>
-                </div>
-              </div>
-              <div class="card-footer"><small class="text-muted">投稿日：2019/03/12</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-11 col-sm-8 col-lg-4 mb-4">
-        <div class="card">
-          <div class="text-center">
-            <!-- Twitterの埋め込み -->
-            <a class="twitter-timeline" data-lang="ja" data-height="1000" href="https://twitter.com/hayakawamaoki?ref_src=twsrc%5Etfw">Tweets by maoki0213</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Design by <a href="https://twitter.com/higiri_4869" target="_blank">緋桐</a>.</div>
-          <div class="col-md-6 footer-social">
-            <a href="./game.html"><i class="fas fa-door-closed footer-secret"></i></a
-            ><a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico"></i></a
-            ><a href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a
-            ><a href="https://twitter.com/maoki0213" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer -->
-  <!-- ページのトップへ戻るボタン -->
-  <a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
-  <!-- ページのトップへ戻るボタン -->
 
-
-  <!-- SwiperのJS -->
-  <script src="./js/swiper.min.js"></script>
-  <!-- Swiperの設定 -->
-  <script>
-  var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 10,
-    centeredSlides : true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-            slidesPerGroup: 1,
-          },
-        992: {
-            slidesPerView: 3,
-            slidesPerGroup: 1,
-          },
-    },
-  });
-  </script>
+	<!-- SwiperのJS -->
+	<script src="./js/swiper.min.js"></script>
+	<!-- Swiperの設定 -->
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 10,
+		centeredSlides : true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		autoplay: {
+			delay: 5500,
+			disableOnInteraction: false
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		breakpoints: {
+				768: {
+						slidesPerView: 2,
+						slidesPerGroup: 1,
+					},
+				992: {
+						slidesPerView: 2.75,
+						slidesPerGroup: 1,
+					},
+		},
+	});
+	</script>
 </body>
 </html>
