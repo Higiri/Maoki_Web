@@ -4,27 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<!-- Bootstrap -->
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/bootstrap_plus.css" rel="stylesheet">
-	<!-- CSS -->
-	<link href="./css/style.css" rel="stylesheet">
-
-	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="./js/bootstrap.min.js"></script>
-	<!-- Bootstrap Icon / Iconic -->
+	
+	<!-- Loading : PACE -->
+	<link rel="stylesheet" href="./css/pace.css">
+	<script src="./js/pace.min.js"></script>
+
+	<!-- Iconic -->
 	<link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
-	<!-- Font Awesome icon -->
+	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/9938a3005f.js"></script>
 
-	<!-- go top JS -->
+	<link href="./css/style.css" rel="stylesheet">
 	<script src="./js/top.js"></script>
-
-	<!-- Filter -->
-	<script src="./js/filter.js"></script>
 
 	<title>Works | 早川舞桜楓 公式サイト</title>
 </head>
@@ -89,8 +87,8 @@
 					</select>
 				</div>
 			</div>
-			<!-- filter: 範囲, filtr-item: 内容, data-category: 属性, data-sort:ソート -->
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
+			<!-- filter: 範囲, filtr-item: 内容, data-category: 属性, data-sort:ソート-->
+			<div class="wrap row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
 				<div class="col pb-3 filtr-item" data-category="2" data-sort="2000823">
 					<div class="card border-light">
 						<img class="card-img-top" src="./image/thumbnail/2020-08-23.jpg" alt="▷ 【誕生日に】 また同じ夢を見てる 歌ってみた ／ 水月茉莉">
@@ -1330,7 +1328,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Designed by Higiri.</div>
+					<div class="col-md-6 footer-copyright">© 2020 早川舞桜楓, Designed by <a href="https://twitter.com/higiri_4869" target="_blank">Higiri</a>.</div>
 					<div class="col-md-6 footer-social">
 						<a href="./game.html"><i class="fas fa-door-closed footer-secret"></i></a>
 						<a href="https://www.nicovideo.jp/mylist/55774189" target="_blank"><i class="icon-niconico footer-niconico"></i></a>
@@ -1345,6 +1343,7 @@
 	<!-- ページのトップへ戻るボタン -->
 	<a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
 	<!-- フィルター&ソート用JS -->
+	<script src="./js/filter.js"></script>
 	<script src="./js/jquery.filterizr.min.js"></script>
 </body>
 </html>

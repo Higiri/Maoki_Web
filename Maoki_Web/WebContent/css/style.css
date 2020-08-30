@@ -243,7 +243,7 @@
 .card-body .works-data {
 	display: flex;
 	flex-wrap: nowrap;
-	
+
 	display: table;
 }
 
@@ -253,7 +253,7 @@
 	line-height: 17px;
 	text-align: left;
 	margin: 0 18px 0 0;
-	
+
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -541,7 +541,7 @@
 .request_content i,
 .request_content_dotted i  {
 	color: #555;
-	margin-right: 1em; 
+	margin-right: 1em;
 	font-size: 24px;
 	vertical-align: middle;
 }
@@ -564,7 +564,7 @@
 }
 .contact_content i {
 	color: #555;
-	margin: 8px 12px; 
+	margin: 8px 12px;
 	font-size: 32px;
 	vertical-align: middle;
 }
