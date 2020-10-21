@@ -6,7 +6,9 @@ $(function () {
     $('.filter').filterizr();
     var filterSingle = $('.filter').filterizr({
         layout: 'sameWidth',
-        
+        elay: 0, // Transition delay in ms
+        delayMode: 'progressive', // 'progressive' or 'alternate'
+        easing: 'ease-out',
         // +
         spinner: { // Configuration for built-in spinner
             enabled: false,

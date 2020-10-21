@@ -142,6 +142,105 @@
 }
 
 /*
+ * navbar hamburger button
+ */
+.navbar-light .navbar-toggler {
+	color: rgba(0,0,0,.5);
+	border: none;
+	padding: 0px;
+	position: relative;
+	width: 30px;
+	height: 27px;
+	box-sizing: border-box;
+	outline:0;
+}
+.navbar-light .navbar-toggler-icon {
+	background-image: none; /* bootstrapのデフォルトボタンを無効化 */
+	background-color: #4a4a4a;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	display: block;
+	position: absolute;
+	transition-property: all;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+/* 3 bar */
+.navbar-toggler-icon:nth-of-type(1) {
+	top: 0px;
+}
+.navbar-toggler-icon:nth-of-type(2) {
+	top: 11px;
+}
+.navbar-toggler-icon:nth-of-type(3) {
+	bottom: 0px;
+}
+
+/* hover */
+.navbar-toggler:not(.active)[aria-expanded="false"]:hover .navbar-toggler-icon:nth-of-type(1) {
+	top: 4px;
+}
+.navbar-toggler:not(.active)[aria-expanded="false"]:hover .navbar-toggler-icon:nth-of-type(3) {
+	bottom: 3px;
+}
+/* animation effect */
+.navbar-toggler .navbar-toggler-icon:nth-of-type(2) {
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+}
+.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(1) {
+	-webkit-transform: translateY(12px) rotate(-315deg) scale(.8);
+	transform: translateY(12px) rotate(-315deg) scale(.8);
+}
+.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(2) {
+	width: 36px;
+	height: 36px;
+	background-color: transparent;
+	border: 2px solid #4a4a4a;
+	border-radius: 50%;
+}
+.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(3) {
+	-webkit-transform: translateY(-12px) rotate(315deg) scale(.8);
+	transform: translateY(-12px) rotate(315deg) scale(.8);
+}
+
+
+
+
+
+.navbar-youtube,
+.navbar-niconico,
+.navbar-twitter{
+	font-size: 1.3rem;
+}
+.navbar-youtube:hover,
+.navbar-youtube:focus {
+	font-size: 1.3rem;
+	color: #ff0000;
+	border: 0;
+}
+
+.navbar-niconico:hover,
+.navbar-niconico:focus {
+	font-size: 1.3rem;
+	color: #252525;
+	border: 0;
+}
+
+.navbar-twitter:hover,
+.navbar-twitter:focus {
+	font-size: 1.3rem;
+	color: #33bffb;
+	border: 0;
+}
+
+/*
  * top page works
  */
 #works h2 {
