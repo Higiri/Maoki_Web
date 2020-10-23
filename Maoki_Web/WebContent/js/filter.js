@@ -5,22 +5,22 @@
 $(function () {
     $('.filter').filterizr();
     var filterSingle = $('.filter').filterizr({
-        layout: 'sameWidth',
-        elay: 0, // Transition delay in ms
-        delayMode: 'progressive', // 'progressive' or 'alternate'
+        layout: 'packed',
+        delay: 1, // Transition delay in ms
+        delayMode: 'alternate', // 'progressive' or 'alternate'
         easing: 'ease-out',
-        // +
-        spinner: { // Configuration for built-in spinner
-            enabled: false,
-            fillColor: '#2184D0',
-            styles: {
-              height: '75px',
-              margin: '0 auto',
-              width: '75px',
-              'z-index': 2,
-            },
-          },
-        // +
+        
+        spinner: {
+        	enabled: true,
+        	// Further (optional) customization options.
+        	fillColor: '#2184D0',
+        	styles: {
+        	height: '75px',
+        	margin: '0 auto',
+        	width: '75px',
+        	'z-index': 2,
+        	},
+        },
     });
 });
 
