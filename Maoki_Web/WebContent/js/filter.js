@@ -15,9 +15,9 @@ $(function () {
         	// Further (optional) customization options.
         	fillColor: '#2184D0',
         	styles: {
-        	height: '75px',
+        	height: '120px',
         	margin: '0 auto',
-        	width: '75px',
+        	width: '120px',
         	'z-index': 2,
         	},
         },
