@@ -5,7 +5,7 @@
 $(function () {
 	$('.filter').filterizr();
 	var filterSingle = $('.filter').filterizr({
-		layout: 'packed',
+		layout: 'sameWidth',
 		delay: 1, // Transition delay in ms
 		delayMode: 'alternate', // 'progressive' or 'alternate'
 		easing: 'ease-out',

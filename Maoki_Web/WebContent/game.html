@@ -8,25 +8,36 @@
 	<!-- Bootstrap -->
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/bootstrap_plus.css" rel="stylesheet">
-	<!-- CSS -->
-	<link href="./css/style.css" rel="stylesheet">
-
-	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- js -->
+
 	<script src="./js/bootstrap.min.js"></script>
-	<!-- Bootstrap Icon / Iconic -->
+
+	<!-- Loading : PACE -->
+	<link rel="stylesheet" href="./css/pace.css">
+	<script src="./js/pace.min.js"></script>
+
+	<!-- Icon -->
 	<link href="./font/css/open-iconic-bootstrap.css" rel="stylesheet">
-	<!-- Font Awesome icon -->
 	<script src="https://kit.fontawesome.com/9938a3005f.js"></script>
 
-	<!-- go top JS -->
+	<link href="./css/style.css" rel="stylesheet">
 	<script src="./js/top.js"></script>
 
-	<!-- Filter -->
-	<script src="./js/filter.js"></script>
-
 	<title>Game &amp; MAD | 早川舞桜楓 公式サイト</title>
+	<meta name="keywords" content="早川舞桜楓,動画制作,エンコード,動画師,エンコ師">
+	<meta name="description" content="早川舞桜楓はMV制作を中心に活動する、映像クリエイターです。動画制作やエンコードの依頼を受け付けています。">
+	<meta name="copyright" content="（C) 早川舞桜楓 ALL RIGHTS RESERVED.">
+	<meta name="author" content="早川舞桜楓">
+	<meta property="og:title" content="早川舞桜楓 公式サイト">
+	<meta property="og:site_name" content="早川舞桜楓 公式サイト">
+	<meta property="og:description" content="早川舞桜楓はMV制作を中心に活動する、映像クリエイターです。動画制作やエンコードの依頼を受け付けています。">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://h-maoki.com/image/maoki.png">
+	<meta property="og:url" content="https://h-maoki.com/">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@hayakawamaoki">
+	<meta name="twitter:image" content="https://h-maoki.com/image/maoki.png">
 </head>
 <body class="body_gray">
 	<!-- Navbar -->
@@ -35,19 +46,16 @@
 			<h1 class="navbar-brand">早川舞桜楓</h1>
 			<!-- [≡] ボタン -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span></button>
-			<!-- 現在のページはactive -->
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-					<li class="nav-item active"><a class="nav-link" href="./works.html">Works</a></li>
+					<li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
 					<li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
 					<li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-				</ul>
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCScpqxEDt8GYubSAOF9ytQw" target="_blank">YouTube</a></li>
-					<li class="nav-item"><a class="nav-link" href="https://www.nicovideo.jp/user/54786827/mylist/55774189" target="_blank">niconico</a></li>
-					<li class="nav-item"><a class="nav-link" href="https://twitter.com/maoki0213" target="_blank">Twitter</a></li>
 				</ul>
 			</div>
 		</div>
@@ -61,9 +69,10 @@
 					<p>早川舞桜楓が制作に関わった動画や、個人制作のMVは <a href="./works.html">こちら</a>。</p>
 				</div>
 			</div>
-		<!-- 絞り込み -->			<div class="form-row align-items-center mb-3">
-				<button type="button" class="trigger active btn btn-outline-dark mb-2" data-filter="all">すべて</button>
-				<div class="btn-group mb-2 mr-1" role="group">
+		<!-- 絞り込み -->
+		<div class="form-row align-items-center mb-3">
+			<button type="button" class="trigger active btn btn-outline-dark mb-2" data-filter="all">すべて</button>
+			<div class="btn-group mb-2 mr-1" role="group">
 					<button type="button" class="trigger btn btn-outline-dark" data-filter="1">ゲーム実況</button>
 					<button type="button" class="trigger btn btn-outline-dark" data-filter="2">MAD</button>
 					<button type="button" class="trigger btn btn-outline-dark" data-filter="3">その他</button>
@@ -88,7 +97,7 @@
 				</div>
 			</div>
 			<!-- filter: 範囲, filtr-item: 内容, data-category: 属性, data-sort:ソート -->
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 filter">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 filter">
 				<div class="col pb-3 filtr-item" data-category="2" data-sort="201015">
 					<div class="card border-light">
 						<img class="card-img-top" src="./image/thumbnail_game/20201015.jpg" alt="抜きたし2OP FULL【MAD】">
@@ -253,7 +262,7 @@
 				</div>
 				<div class="col pb-3 filtr-item" data-category="3" data-sort="171022">
 					<div class="card border-light">
-						<img class="card-img-top" src="./image/thumbnail/sm32139823.jpg" alt="【ネタ注意】ドラマツルギーを実況してみたｗｗｗ">
+						<img class="card-img-top" src="./image/thumbnail_game/sm32139823.jpg" alt="【ネタ注意】ドラマツルギーを実況してみたｗｗｗ">
 						<div class="card-body">
 							<h3 class="card-title">【ネタ注意】ドラマツルギーを実況してみたｗｗｗ</h3>
 							<div class="works-data">
@@ -269,7 +278,7 @@
 				</div>
 				<div class="col pb-3 filtr-item" data-category="3" data-sort="170923">
 					<div class="card border-light">
-						<img class="card-img-top" src="./image/thumbnail/sm31979665.jpg" alt="『歌い手の闇』病名は愛だったを無加工から超加工してみた結果ｗｗｗ">
+						<img class="card-img-top" src="./image/thumbnail_game/sm31979665.jpg" alt="『歌い手の闇』病名は愛だったを無加工から超加工してみた結果ｗｗｗ">
 						<div class="card-body">
 							<h3 class="card-title">『歌い手の闇』病名は愛だったを無加工から超加工してみた結果ｗｗｗ</h3>
 							<div class="works-data">
@@ -310,7 +319,7 @@
 						<div class="row">
 							<div class="col-6 col-md-12 px-4">
 								<p><a href="./">Home</a></p>
-								<p><a href="#" class="fotter-links-active">Works</a></p>
+								<p><a class="fotter-links-active" href="#">Works</a></p>
 							</div>
 							<div class="col-6 col-md-12 px-4">
 								<p><a href="./request.html">Request</a></p>
@@ -339,6 +348,7 @@
 	<!-- ページのトップへ戻るボタン -->
 	<a id="pagetop" href="#" class="page_top" style="display: none;"><i class="fas fa-angle-up fa-3x" aria-hidden="true"></i></a>
 	<!-- フィルター&ソート用JS -->
+	<script src="./js/filter_game.js"></script>
 	<script src="./js/jquery.filterizr.min.js"></script>
 </body>
 </html>
