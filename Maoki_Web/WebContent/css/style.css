@@ -1,4 +1,14 @@
 /*
+ * Font (Note Sans JP)
+ * ------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+	font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN","Noto Sans JP", "メイリオ", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/*
  * swiper
  * ------ */
 .swiper-slide .slide-content h1,
@@ -48,33 +58,65 @@
 	width: 48px;
 	height: 48px;
 	margin-top: 0px;
-}
-.swiper-button-prev {
-	background: url(../image/angle-left.png) no-repeat center center / contain;
-}
-.swiper-button-prev::after {
-	content: "";
-}
-.swiper-button-prev:hover {
-	background: url(../image/angle-left-hover.png) no-repeat center center / contain;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all	0.3s ease;
+	z-index: 10;
 }
 
-.swiper-button-next {
-	background: url(../image/angle-right.png) no-repeat center center / contain;
+.swiper-button-prev::before,
+.swiper-button-next::before {
+	content: '';
+	display: block;
+	box-sizing: border-box;
+	width: 48px;
+	height: 48px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	right: 1px;
+	background: rgba(0, 0, 0, 0.5);
+	);
 }
+
+.swiper-button-prev::after,
 .swiper-button-next::after {
-	content: "";
+	position: relative;
+	font-family: "Font Awesome 5 Free", sans-serif;
+	opacity: 1;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 40px;
+	color: #fff;
 }
-.swiper-button-next:hover {
-	background: url(../image/angle-right-hover.png) no-repeat center center / contain;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all	0.3s ease;
+
+.swiper-button-prev::after {
+	content: "\f104";
+	right: 2px;
+}
+
+.swiper-button-next::after {
+	content: "\f105";
+	left: 1px;
+}
+
+.swiper-button-prev:hover::before,
+.swiper-button-next:hover::before {
+	background: rgb(45,196, 233);
+	transition-property: all;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+		left: 20px;
+		right: auto
+}
+ 
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+		right: 20px;
+		left: auto
 }
 
 /*
@@ -120,7 +162,9 @@
 .body_gray {
 	background: #eee;
 }
-
+.body_lgray {
+	background: #f6f6f6;
+}
 
 .icon_white {
 	color: #ffffff;
@@ -128,6 +172,11 @@
 .icon_white a {
 	color: #ffffff;
 }
+
+.space {
+	margin: 120px 0;
+}
+
 
 /*
  * navbar
@@ -194,25 +243,21 @@
 	-webkit-transform: translate3d(-50%, -50%, 0);
 	transform: translate3d(-50%, -50%, 0);
 }
-.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(1) {
+.navbar-toggler[aria-expanded="true"]	.navbar-toggler-icon:nth-of-type(1) {
 	-webkit-transform: translateY(10px) rotate(-315deg) scale(.8);
 	transform: translateY(10px) rotate(-315deg) scale(.8);
 }
-.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(2) {
+.navbar-toggler[aria-expanded="true"]	.navbar-toggler-icon:nth-of-type(2) {
 	width: 36px;
 	height: 36px;
 	background-color: transparent;
 	border: 2px solid #4a4a4a;
 	border-radius: 50%;
 }
-.navbar-toggler[aria-expanded="true"]  .navbar-toggler-icon:nth-of-type(3) {
+.navbar-toggler[aria-expanded="true"]	.navbar-toggler-icon:nth-of-type(3) {
 	-webkit-transform: translateY(-10px) rotate(315deg) scale(.8);
 	transform: translateY(-10px) rotate(315deg) scale(.8);
 }
-
-
-
-
 
 .navbar-youtube,
 .navbar-niconico,
@@ -270,21 +315,21 @@
  * -------- */
 
 #sub_page h2 {
-  position: relative;
-  padding: 1rem ;
-  text-align: center;
-  margin: 1rem 0 2rem;
+	position: relative;
+	padding: 1rem ;
+	text-align: center;
+	margin: 1rem 0 2rem;
 }
 
 #sub_page h2:before {
-  position: absolute;
-  bottom: 0px;
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 5px;
-  content: '';
-  border-radius: 3px;
-  background: #24A4E9;
+	position: absolute;
+	bottom: 0px;
+	left: calc(50% - 30px);
+	width: 60px;
+	height: 5px;
+	content: '';
+	border-radius: 3px;
+	background: #24A4E9;
 }
 
 #sub_page h3.subpage_h {
@@ -326,6 +371,118 @@
 	margin: 0 0 12px;
 }
 
+/*
+ * page index
+ * ----------- */
+
+.index_area {
+	padding: 20px;
+	max-width: 480px;
+	font-size: 15px;
+	color: #4a4a4a;
+/*	margin: 0 auto; */
+}
+
+.index_area input {
+	display: none;
+}
+
+.index_area label {
+	display: block;
+	position: relative;
+	padding : 25px 15px;
+	font-weight: bold;
+	cursor :pointer;
+	margin-bottom: 0;
+	border-top: solid 2px #A3B978;
+	border-bottom: solid 2px #A3B978;
+}
+
+.index_area label:before {
+	content: "arrow_drop_down";
+	font-family: 'Material Icons';
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) ;
+}
+
+.index_area label::after {
+	content: "目次";
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: translateY(-50%) ;
+}
+
+/* 切り替え */
+.check:checked ~ .index_list {
+		display: none;
+}
+
+.check:checked ~ label:before {
+		content: 'arrow_right';
+}
+
+/* リスト部分のスタイル */
+.index_list {
+	margin-bottom: 2em;
+}
+
+.index_list ul {
+	padding: 0 1.5em;
+	list-style: none;
+	counter-reset: number 0;
+	border-bottom: solid 2px #A3B978;
+}
+
+.index_list li {
+	line-height: 2.5;
+	padding: 0 1em;
+}
+
+.index_list li a {
+	display: block;
+	color: #4a4a4a;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.index_list li a::before {
+	counter-increment: number 1;
+	content: counter(number) '.';
+	padding-right: 0.75em;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.index_list li a:hover {
+	opacity: 0.5;
+}
+.index_list li ul {
+	padding: 0 1.5em 0 3em;
+	border: 0;
+}
+.index_list li ul li {
+	padding: 0;
+}
+
+.check:checked ~ .index_list {
+		display: none;
+}
+.check:checked ~ label:before {
+		content: 'arrow_right';
+}
+
+
+/*
+ * marker
+ * ------ */
+.marker_yellow {
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+	padding: 0 2px;
+}
 
 /*
  * card
@@ -638,15 +795,20 @@
 }
 
 .request_content i,
-.request_content_dotted i  {
+.request_content_dotted i	{
 	color: #555;
 	margin-right: 1em;
 	font-size: 24px;
 	vertical-align: middle;
 }
 
+.request_content .table td,
+.request_content .table th {
+	 vertical-align: middle!important;
+}
+
 .request_content .table thead th {
-    background-color: #D7E1C5; /* #D7ECF7 */
+	background-color: #D7E1C5; /* #D7ECF7 */
 }
 
 .request_content .table-hover tbody tr:hover td,

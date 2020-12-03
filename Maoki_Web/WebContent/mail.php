@@ -30,14 +30,14 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
-$site_top = "http://maoki.php.xdomain.jp/";
+$site_top = "https://h-maoki.com";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "hayakawamaoki@gmail.com";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
-$from = "hayakawamaoki@gmail.com";
+$from = "hayakawamaoki@h-maoki.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
@@ -52,7 +52,7 @@ $Referer_check = 0;
 
 //リファラチェックを「する」場合のドメイン ※設置するサイトのドメインを指定して下さい。
 //もしこの設定が間違っている場合は送信テストですぐに気付けます。
-$Referer_check_domain = "maoki.php.xdomain.jp/";
+$Referer_check_domain = "https://h-maoki.com";
 
 /*セッションによるワンタイムトークン（CSRF対策、及びスパム防止）(する=1, しない=0)
 ※ただし、この機能を使う場合は↓の送信確認画面の表示が必須です。（デフォルトではON（1）になっています）
@@ -134,7 +134,7 @@ $mailSignature = <<< FOOTER
 早川舞桜楓
 E-mail: hayakawamaoki@gmail.com
 Twitter: https://twitter.com/maoki0213
-URL: http://maoki.php.xdomain.jp/
+URL: https://h-maoki.com
 ──────────────────────
 
 FOOTER;
@@ -160,7 +160,7 @@ $hankaku_array = array('電話番号','金額');
 //※宛先不明（間違いなどで存在しないアドレス）の場合に 管理者宛に「Mail Delivery System」から「Undelivered Mail Returned to Sender」というメールが届きます。
 //サーバーによっては稀にこの設定が必須の場合もあります。
 //設置サーバーでPHPがセーフモードで動作している場合は使用できませんので送信時にエラーが出たりメールが届かない場合は「0」（OFF）として下さい。
-$use_envelope = 0;
+$use_envelope = 1;
 
 //機種依存文字の変換
 /*たとえば㈱（かっこ株）や①（丸1）、その他特殊な記号や特殊な漢字などは変換できずに「？」と表示されます。それを回避するための機能です。
@@ -282,26 +282,25 @@ else if($confirmDsp == 1){
 </head>
 <body>
   <!--  ナビゲーションバー  -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand">早川舞桜楓</a>
-
-      <!-- 幅がxs時に表示される、[≡] ボタン  -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span></button>
-
-      <!--  現在のページはactiveにする  -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link">Home</a></li>
-          <li class="nav-item"><a class="nav-link">Works</a></li>
-          <li class="nav-item"><a class="nav-link">Request</a></li>
-          <li class="nav-item active"><a class="nav-link">Contact</a></li>
-          <li class="nav-item"><a class="nav-link">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-sm navbar-light bg-white navbar-bottom-dotted">
+		<div class="container">
+			<h1 class="navbar-brand">早川舞桜楓</h1>
+			<!-- [≡] ボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="./works.html">Works</a></li>
+					<li class="nav-item"><a class="nav-link" href="./request.html">Request</a></li>
+					<li class="nav-item active"><a class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
   <div class="container">
     <ul class="breadcrumb">
       <li class="breadcrumb-item"><a>Home</a></li>
