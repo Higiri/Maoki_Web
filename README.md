@@ -11,7 +11,7 @@ https://h-maoki.com/
 ### Bootstrap
 - https://github.com/twbs/bootstrap
 - https://getbootstrap.jp/
-###Honoka (Bootstrapテーマ)
+### Honoka (Bootstrapテーマ)
 - https://github.com/windyakin/Honoka
 - https://honokak.osaka/
 ### Swiper
