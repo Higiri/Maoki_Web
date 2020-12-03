@@ -25,9 +25,9 @@ https://h-maoki.com/
 ### Mailform
 - https://www.php-factory.net/mail/01.php
 
-# ICON
-## ICONIC
+## ICON
+### ICONIC
 - https://github.com/iconic/open-iconic
 - https://useiconic.com/open
-## Font Awesome
+### Font Awesome
 - https://fontawesome.com/
